@@ -1,0 +1,16 @@
+from MysqldbHelper import *
+from django.http import HttpResponse
+
+def selectUid(request):
+    mobile = request.GET['mobile']
+    db = DB('119.23.218.196', 33066, 'admin', 'admin#ROOT@ha', 'miloan')
+
+    list = ['user_contact','user_contact_archive','user_employment','user_employment_archive','user_employment_status','user_identity','user_identity_archive','user_identity_face','user_identity_face_archive','user_identity_face_status','user_key_contact','user_operator','user_operator_archive','user_operator_status','user_personal_status','user_receipt','user_receipt_archive','user_receipt_status','user_wechat','user_wechat_archive','user_wechat_status','user_zhima','user_zhima_archive','user_zhima_status']
+
+#    sql = "select * from user where mobile like '%%%%%s%%%%'" % (mobile)
+#    fc = db.query(sql)
+    for i in list:
+        print(i)
+
+
+if __name__ == "__main__":
