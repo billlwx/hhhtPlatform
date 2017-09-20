@@ -5,6 +5,7 @@
 
 封装的mysql常用函数
 '''
+from django.http import HttpResponse
 
 import MySQLdb
 
@@ -38,8 +39,16 @@ class DB():
         return returnData
 
     def update(self, sqlString):
-        cursor = self.conn.cursor()
-        cursor.execute(sqlString)
-        self.conn.commit()
-        cursor.close()
-        self.conn.close()
+        try:
+            cursor = self.conn.cursor()
+            # 执行sql语句
+            cursor.execute(sqlString)
+            # 提交到数据库执行
+            self.conn.commit()
+        except:
+            # Rollback in case there is any error
+            self.conn.rollback()
+        # 关闭数据库连接
+            self.conn.close()
+
+

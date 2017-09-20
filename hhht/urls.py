@@ -16,9 +16,10 @@ Including another URLconf
 from django.conf.urls import url
 from django.contrib import admin
 from apo import views
-from apo import selectUid
+from apo import selectUid,deleteUserInfo
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^$',views.index),
     url(r'^selectUid/$', selectUid.selectUid),
+    url(r'^deleteUserInfo/$', deleteUserInfo.deleteUserInfo),
 ]
