@@ -16,11 +16,11 @@ Including another URLconf
 from django.conf.urls import url
 from django.contrib import admin
 from apo import views
-from apo import selectUid,deleteUserInfo,redis
+from apo import selectUid,deleteUserInfo,delete_auth
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^$',views.index),
     url(r'^selectUid/$', selectUid.selectUid),
     url(r'^deleteUserInfo/$', deleteUserInfo.deleteUserInfo),
-    url(r'^delete_auth/$', redis.delete_auth),
+    url(r'^delete_auth/$', delete_auth.delete_auth),
 ]
