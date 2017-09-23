@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="5ceede38-904b-4e94-a262-26cf0c7b7444" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hhht/settings.py" afterPath="$PROJECT_DIR$/hhht/settings.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -302,7 +301,14 @@
       <option name="project" value="LOCAL" />
       <updated>1506148085818</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="增加远程数据库访问">
+      <created>1506148733475</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1506148733475</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -339,7 +345,8 @@
     <MESSAGE value="删除接口" />
     <MESSAGE value="小修改" />
     <MESSAGE value="允许网关机访问" />
-    <option name="LAST_COMMIT_MESSAGE" value="允许网关机访问" />
+    <MESSAGE value="增加远程数据库访问" />
+    <option name="LAST_COMMIT_MESSAGE" value="增加远程数据库访问" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
