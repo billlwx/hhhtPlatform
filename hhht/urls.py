@@ -22,5 +22,5 @@ urlpatterns = [
     url(r'^$',views.index),
     url(r'^selectUid/$', selectUid.selectUid),
     url(r'^deleteUserInfo/$', deleteUserInfo.deleteUserInfo),
-    url(r'^deleteredisauth/$', redis.delete_auth),
+    url(r'^delete_auth/$', redis.delete_auth),
 ]
