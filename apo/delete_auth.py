@@ -9,7 +9,6 @@ def delete_auth(request):
     id = request.GET['userId']
     key = 'auth_status::'+id
     print key
-    con = get_redis_connection("default")
-    con.delete("auth_status::136249")
+    cache.delete_pattern("auth_status::136249")
     return HttpResponse("success")
 
