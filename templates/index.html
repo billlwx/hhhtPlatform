@@ -57,7 +57,7 @@
 {#    <input type="text" name="mobile" placeholder="请输入用户手机号">#}
     <label>清除用户认证信息的redis:</label>
     <div class="form-group">
-        <input type="text" name="uid" class="form-control" placeholder="请输入用户uid" id="uid">
+        <input type="text" name="uid" class="form-control" placeholder="请输入用户uid" id="userId">
     </div>
 
     <button type="submit" class="btn btn-primary">清除认证redis</button>
@@ -66,7 +66,7 @@
 <script>
     $("#js-form3").on('submit', function (e) {
         e.preventDefault();
-        $.get('/delete_auth', {uid: $("#uid").val()}).done(function(data) {
+        $.get('/delete_auth', {userId: $("#userId").val()}).done(function(data) {
             $("#msg3").html(data);
         })
     })

@@ -5,6 +5,6 @@ from django.core.cache import cache
 
 
 def delete_auth(request):
-    userId = request.GET['uid']
-    key = 'auth_status::'+userId
+    id = request.GET['userId']
+    key = 'auth_status::'+id
     cache.delete(key)
