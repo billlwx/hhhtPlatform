@@ -12,4 +12,7 @@ def selectUid(request):
         mobile = row[1]
         list.append("id=%s,mobile=%s" % \
               (id, mobile))
-    return HttpResponse(list)
+    if len(list):
+        return HttpResponse(list)
+    else:
+        return HttpResponse('result is null')
