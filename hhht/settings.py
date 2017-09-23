@@ -77,8 +77,12 @@ WSGI_APPLICATION = 'hhht.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'miloan',
+        'USER':'admin',
+        'PASSWORD':'admin#ROOT@ha',
+        'HOST':'119.23.218.196',
+        'PORT':'33066',
     }
 }
 
