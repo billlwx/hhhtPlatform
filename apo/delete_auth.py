@@ -8,5 +8,6 @@ def delete_auth(request):
     id = request.GET['userId']
     key = 'auth_status::'+id
     print key
-    cache.delete("auth_status::136249")
-    return HttpResponse({'succes'})
+    list = cache.hgetall("auth_status::136249")
+ #   cache.delete("auth_status::136249")
+    return HttpResponse(list)
