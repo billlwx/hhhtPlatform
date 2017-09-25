@@ -17,3 +17,13 @@ def deleteUserInfo(request):
         sql = "DELETE from %s where user_id = '%s'" % (table_name,mobile)
         db.update(sql)
     return HttpResponse({'succes'})
+
+
+def modifyUserInfo(request):
+    UID = request.GET['userId']
+    db = DB('119.23.218.196', 33066, 'admin', 'admin#ROOT@ha', 'miloan')
+    updatecase = "UPDATE miloan.case set case_status = 'rejected' where user_id = '%s' ORDER BY id desc  limit 1" % (UID)
+    updatecontr = "UPDATE miloan.contract set status = 'REPAY_SUC'  where uid = '%s' ORDER BY id desc  limit 1" % (UID)
+    db.update(updatecase)
+    db.update(updatecontr)
+    return HttpResponse({'succes'})

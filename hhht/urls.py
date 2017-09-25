@@ -23,4 +23,5 @@ urlpatterns = [
     url(r'^selectUid/$', selectUid.selectUid),
     url(r'^deleteUserInfo/$', deleteUserInfo.deleteUserInfo),
     url(r'^delete_auth/$', delete_auth.delete_auth),
+    url(r'^modifyUserInfo/$', deleteUserInfo.modifyUserInfo),
 ]

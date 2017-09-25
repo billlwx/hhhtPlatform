@@ -71,6 +71,25 @@
         })
     })
 </script>
+
+<form action="/modifyUserInfo" method="get" id="js-form4" class="form-inline">
+{#    <input type="text" name="mobile" placeholder="请输入用户手机号">#}
+    <label>认证信息改为可编辑</label>
+    <div class="form-group">
+        <input type="text" name="uid" class="form-control" placeholder="请输入用户uid" id="userId">
+    </div>
+
+    <button type="submit" class="btn btn-primary">认证信息改为可编辑</button>
+</form>
+<div id="msg4"></div>
+<script>
+    $("#js-form4").on('submit', function (e) {
+        e.preventDefault();
+        $.get('/modifyUserInfo', {userId: $("#userId").val()}).done(function(data) {
+            $("#msg4").html(data);
+        })
+    })
+</script>
 <hr/>
 
 <h5>构造逾期数据------待开发</h5>
