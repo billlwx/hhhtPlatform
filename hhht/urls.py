@@ -19,7 +19,7 @@ from apo import views
 from apo import selectUid,deleteUserInfo,delete_auth
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'^$',views.index),
+    url(r'^index/$',views.index),
     url(r'^selectUid/$', selectUid.selectUid),
     url(r'^deleteUserInfo/$', deleteUserInfo.deleteUserInfo),
     url(r'^delete_auth/$', delete_auth.delete_auth),
