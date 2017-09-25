@@ -92,6 +92,22 @@
 </script>
 <hr/>
 
+<form action="/mcflush" method="get" id="js-form5" class="form-inline">
+{#    <input type="text" name="mobile" placeholder="请输入用户手机号">#}
+    <label>刷新mc缓存</label>
+    <button type="submit" class="btn btn-primary">刷新mc缓存</button>
+</form>
+<div id="msg5"></div>
+<script>
+    $("#js-form5").on('submit', function (e) {
+        e.preventDefault();
+        $.get('/mcflush').done(function(data) {
+            $("#msg5").html(data);
+        })
+    })
+</script>
+<hr/>
+
 <h5>构造逾期数据------待开发</h5>
 <hr/>
 <h5>添加白名单------待开发</h5>
