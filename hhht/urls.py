@@ -26,4 +26,5 @@ urlpatterns = [
     url(r'^modifyUserInfo/$', deleteUserInfo.modifyUserInfo),
     url(r'^mcflush/$', mcflush.mcflush),
     url(r'^selectwhitelist/$', whitelist.selectwhitelist),
+    url(r'^updatewhitelist/$', whitelist.updatewhitelist),
 ]
