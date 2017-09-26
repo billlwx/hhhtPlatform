@@ -119,9 +119,9 @@
 </form>
 <div id="msg6"></div>
 <script>
-    $("#js-form5").on('submit', function (e) {
+    $("#js-form6").on('submit', function (e) {
         e.preventDefault();
-        $.get('/mcflush').done(function(data) {
+        $.get('/selectwhitelist').done(function(data) {
             $("#msg6").html(data);
         })
     })
