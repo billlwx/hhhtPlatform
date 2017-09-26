@@ -19,7 +19,7 @@ def selectwhitelist(request):
         list = []
         for row in fc:
             member = row[4]
-            list.append("白名单为%s" % \
+            list.append("whitelist=%s" % \
                         (member))
         if len(list):
             return HttpResponse(list)
