@@ -117,11 +117,12 @@
     <button type="submit" class="btn btn-primary">查询</button>&nbsp;&nbsp;
     <button type="submit" class="btn btn-primary">添加&新增</button>
 </form>
+
 <div id="msg6"></div>
 <script>
     $("#js-form6").on('submit', function (e) {
         e.preventDefault();
-        $.get('/selectwhitelist').done(function(data) {
+        $.get('/selectwhitelist', {uid: $("#uid").val()}).done(function(data) {
             $("#msg6").html(data);
         })
     })
