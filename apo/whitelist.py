@@ -12,7 +12,7 @@ def updatewhitelist(request):
 
 
 def selectwhitelist(request):
-        UID = request.GET['uid']
+        UID = request.GET['whitelistuid']
         db = DB('119.23.218.196', 33066, 'admin', 'admin#ROOT@ha', 'miloan')
         sql = "select * from white_list_member where user_id = '%s'" % (UID)
         fc = db.query(sql)
