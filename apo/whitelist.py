@@ -4,8 +4,8 @@ from django.http import HttpResponse
 def updatewhitelist(request):
     UID = request.GET['userId']
     db = DB('119.23.218.196', 33066, 'admin', 'admin#ROOT@ha', 'miloan')
-    updatecase = "UPDATE white_list_member set screen_keys = '%s' where user_id like '%%%%%s%%%%'" % (UID)
-    updatecontr = "UPDATE miloan.contract set status = 'REPAY_SUC'  where uid = '%s' ORDER BY id desc  limit 1" % (UID)
+    update = "UPDATE white_list_member set screen_keys = '%s' where user_id like '%%%%%s%%%%'" % (UID)
+    insert = "UPDATE miloan.contract set status = 'REPAY_SUC'  where uid = '%s' ORDER BY id desc  limit 1" % (UID)
     db.update(updatecase)
     db.update(updatecontr)
     return HttpResponse({'succes'})
