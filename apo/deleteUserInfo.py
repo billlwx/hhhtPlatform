@@ -1,5 +1,6 @@
 from MysqldbHelper import *
 from django.http import HttpResponse
+import redis
 
 def deleteUserInfo(request):
     mobile = request.GET['uid']
@@ -27,3 +28,15 @@ def modifyUserInfo(request):
     db.update(updatecase)
     db.update(updatecontr)
     return HttpResponse({'succes'})
+
+
+
+def delete_auth(request):
+    pool = redis.ConnectionPool(host='172.18.225.181',port=6379)
+    r = redis.StrictRedis(connection_pool=pool)
+    id = request.GET['userId']
+    key = 'auth_status::'+id
+    print key
+    r.delete(key)
+    return HttpResponse("success")
+

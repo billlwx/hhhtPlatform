@@ -16,13 +16,13 @@ Including another URLconf
 from django.conf.urls import url
 from django.contrib import admin
 from apo import views
-from apo import selectUid,deleteUserInfo,delete_auth,mcflush,whitelist
+from apo import selectUid,deleteUserInfo,mcflush,whitelist
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^index/$',views.index),
     url(r'^selectUid/$', selectUid.selectUid),
     url(r'^deleteUserInfo/$', deleteUserInfo.deleteUserInfo),
-    url(r'^delete_auth/$', delete_auth.delete_auth),
+    url(r'^delete_auth/$', deleteUserInfo.delete_auth),
     url(r'^modifyUserInfo/$', deleteUserInfo.modifyUserInfo),
     url(r'^mcflush/$', mcflush.mcflush),
     url(r'^selectwhitelist/$', whitelist.selectwhitelist),
