@@ -130,7 +130,7 @@ STATICFILES_DIRS = (
     os.path.join(BASE_DIR, "static"),
 )
 STATIC_ROOT = os.path.join(os.path.dirname(__file__),'static')
-# 设置图片等静态文件的路径
+
 STATICFILES_DIRS = (
     ('css',os.path.join(STATIC_ROOT,'css').replace('\\','/') ),
     ('js',os.path.join(STATIC_ROOT,'js').replace('\\','/') ),
