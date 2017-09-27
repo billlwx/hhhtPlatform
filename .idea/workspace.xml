@@ -24,14 +24,14 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="133">
-              <caret line="7" column="7" lean-forward="true" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
+            <state relative-caret-position="152">
+              <caret line="8" column="7" lean-forward="true" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="7" />
               <folding>
                 <element signature="n#form#3;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#script#6;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#form#4;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="e#4277#4283#0#HTML" expanded="true" />
-                <element signature="e#4283#4289#0#HTML" expanded="true" />
+                <element signature="e#4316#4322#0#HTML" expanded="true" />
+                <element signature="e#4322#4328#0#HTML" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -67,8 +67,8 @@
       <file leaf-file-name="settings.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/hhht/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2527">
-              <caret line="133" column="50" lean-forward="true" selection-start-line="133" selection-start-column="50" selection-end-line="133" selection-end-column="50" />
+            <state relative-caret-position="670">
+              <caret line="141" column="1" lean-forward="true" selection-start-line="141" selection-start-column="1" selection-end-line="141" selection-end-column="1" />
               <folding>
                 <element signature="e#308#317#0" expanded="true" />
               </folding>
@@ -105,6 +105,7 @@
       <find>uid</find>
       <find>id=</find>
       <find>modifyUserInfo</find>
+      <find>INSTALLED_APPS</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -121,7 +122,6 @@
         <option value="$PROJECT_DIR$/apo/MysqldbHelper.py" />
         <option value="$PROJECT_DIR$/apo/migrations/redis.py" />
         <option value="$PROJECT_DIR$/redis.py" />
-        <option value="$PROJECT_DIR$/hhht/settings.py" />
         <option value="$PROJECT_DIR$/apo/redis.py" />
         <option value="$PROJECT_DIR$/apo/delete_auth.py" />
         <option value="$PROJECT_DIR$/apo/mcflush.py" />
@@ -130,6 +130,7 @@
         <option value="$PROJECT_DIR$/apo/deleteUserInfo.py" />
         <option value="$PROJECT_DIR$/apo/whitelist.py" />
         <option value="$PROJECT_DIR$/hhht/urls.py" />
+        <option value="$PROJECT_DIR$/hhht/settings.py" />
         <option value="$PROJECT_DIR$/templates/index.html" />
       </list>
     </option>
@@ -305,20 +306,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1505633200199</updated>
-    </task>
-    <task id="LOCAL-00005" summary="增加远程数据库访问">
-      <created>1506148749001</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1506148749001</updated>
-    </task>
-    <task id="LOCAL-00006" summary="增加查询为空的判断">
-      <created>1506149552624</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1506149552624</updated>
     </task>
     <task id="LOCAL-00007" summary="redis">
       <created>1506150482629</created>
@@ -649,7 +636,21 @@
       <option name="project" value="LOCAL" />
       <updated>1506479148012</updated>
     </task>
-    <option name="localTasksCounter" value="54" />
+    <task id="LOCAL-00054" summary="白名单">
+      <created>1506480077933</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1506480077933</updated>
+    </task>
+    <task id="LOCAL-00055" summary="白名单">
+      <created>1506481293778</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1506481293778</updated>
+    </task>
+    <option name="localTasksCounter" value="56" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -947,8 +948,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/hhht/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2527">
-          <caret line="133" column="50" lean-forward="true" selection-start-line="133" selection-start-column="50" selection-end-line="133" selection-end-column="50" />
+        <state relative-caret-position="670">
+          <caret line="141" column="1" lean-forward="true" selection-start-line="141" selection-start-column="1" selection-end-line="141" selection-end-column="1" />
           <folding>
             <element signature="e#308#317#0" expanded="true" />
           </folding>
@@ -957,14 +958,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="7" column="7" lean-forward="true" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
+        <state relative-caret-position="152">
+          <caret line="8" column="7" lean-forward="true" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="7" />
           <folding>
             <element signature="n#form#3;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#script#6;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#form#4;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="e#4277#4283#0#HTML" expanded="true" />
-            <element signature="e#4283#4289#0#HTML" expanded="true" />
+            <element signature="e#4316#4322#0#HTML" expanded="true" />
+            <element signature="e#4322#4328#0#HTML" expanded="true" />
           </folding>
         </state>
       </provider>
