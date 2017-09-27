@@ -3,7 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="5ceede38-904b-4e94-a262-26cf0c7b7444" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hhht/settings.py" afterPath="$PROJECT_DIR$/hhht/settings.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hhht/urls.py" afterPath="$PROJECT_DIR$/hhht/urls.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/index.html" afterPath="$PROJECT_DIR$/templates/index.html" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/static/logo.png" afterPath="$PROJECT_DIR$/static/images/logo.png" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -24,14 +27,14 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="152">
-              <caret line="8" column="7" lean-forward="true" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="7" />
+            <state relative-caret-position="76">
+              <caret line="4" column="39" lean-forward="true" selection-start-line="4" selection-start-column="39" selection-end-line="4" selection-end-column="39" />
               <folding>
                 <element signature="n#form#3;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#script#6;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#form#4;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="e#4316#4322#0#HTML" expanded="true" />
-                <element signature="e#4322#4328#0#HTML" expanded="true" />
+                <element signature="e#4258#4264#0#HTML" expanded="true" />
+                <element signature="e#4264#4270#0#HTML" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -40,8 +43,8 @@
       <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/hhht/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="466">
-              <caret line="28" column="26" lean-forward="false" selection-start-line="28" selection-start-column="26" selection-end-line="28" selection-end-column="26" />
+            <state relative-caret-position="485">
+              <caret line="34" column="0" lean-forward="true" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
               <folding>
                 <element signature="e#638#670#0" expanded="true" />
               </folding>
@@ -67,8 +70,8 @@
       <file leaf-file-name="settings.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/hhht/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="670">
-              <caret line="141" column="1" lean-forward="true" selection-start-line="141" selection-start-column="1" selection-end-line="141" selection-end-column="1" />
+            <state relative-caret-position="309">
+              <caret line="137" column="12" lean-forward="false" selection-start-line="137" selection-start-column="6" selection-end-line="137" selection-end-column="12" />
               <folding>
                 <element signature="e#308#317#0" expanded="true" />
               </folding>
@@ -77,7 +80,7 @@
         </entry>
       </file>
       <file leaf-file-name="logo.png" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/static/logo.png">
+        <entry file="file://$PROJECT_DIR$/static/images/logo.png">
           <provider selected="true" editor-type-id="images">
             <state />
           </provider>
@@ -129,8 +132,8 @@
         <option value="$PROJECT_DIR$/apo/views.py" />
         <option value="$PROJECT_DIR$/apo/deleteUserInfo.py" />
         <option value="$PROJECT_DIR$/apo/whitelist.py" />
-        <option value="$PROJECT_DIR$/hhht/urls.py" />
         <option value="$PROJECT_DIR$/hhht/settings.py" />
+        <option value="$PROJECT_DIR$/hhht/urls.py" />
         <option value="$PROJECT_DIR$/templates/index.html" />
       </list>
     </option>
@@ -142,8 +145,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="655" />
-    <option name="y" value="57" />
+    <option name="x" value="367" />
+    <option name="y" value="59" />
     <option name="width" value="1920" />
     <option name="height" value="1080" />
   </component>
@@ -190,6 +193,12 @@
             <path>
               <item name="python" type="b2602c69:ProjectViewProjectNode" />
               <item name="python" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="images" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="python" type="b2602c69:ProjectViewProjectNode" />
+              <item name="python" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -206,6 +215,9 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\gitlab\python\static\images" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="E:\gitlab\python\static" />
       <recent name="$PROJECT_DIR$/apo" />
@@ -306,13 +318,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1505633200199</updated>
-    </task>
-    <task id="LOCAL-00007" summary="redis">
-      <created>1506150482629</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1506150482629</updated>
     </task>
     <task id="LOCAL-00008" summary="清除认证信息的redis">
       <created>1506155261698</created>
@@ -650,7 +655,14 @@
       <option name="project" value="LOCAL" />
       <updated>1506481293778</updated>
     </task>
-    <option name="localTasksCounter" value="56" />
+    <task id="LOCAL-00056" summary="白名单">
+      <created>1506481599451</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1506481599451</updated>
+    </task>
+    <option name="localTasksCounter" value="57" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -931,41 +943,41 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/hhht/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="466">
-          <caret line="28" column="26" lean-forward="false" selection-start-line="28" selection-start-column="26" selection-end-line="28" selection-end-column="26" />
-          <folding>
-            <element signature="e#638#670#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/static/logo.png">
+    <entry file="file://$PROJECT_DIR$/static/images/logo.png">
       <provider selected="true" editor-type-id="images">
         <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/hhht/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="670">
-          <caret line="141" column="1" lean-forward="true" selection-start-line="141" selection-start-column="1" selection-end-line="141" selection-end-column="1" />
+        <state relative-caret-position="309">
+          <caret line="137" column="12" lean-forward="false" selection-start-line="137" selection-start-column="6" selection-end-line="137" selection-end-column="12" />
           <folding>
             <element signature="e#308#317#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/hhht/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="485">
+          <caret line="34" column="0" lean-forward="true" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+          <folding>
+            <element signature="e#638#670#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/templates/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" column="7" lean-forward="true" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="7" />
+        <state relative-caret-position="76">
+          <caret line="4" column="39" lean-forward="true" selection-start-line="4" selection-start-column="39" selection-end-line="4" selection-end-column="39" />
           <folding>
             <element signature="n#form#3;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#script#6;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#form#4;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="e#4316#4322#0#HTML" expanded="true" />
-            <element signature="e#4322#4328#0#HTML" expanded="true" />
+            <element signature="e#4258#4264#0#HTML" expanded="true" />
+            <element signature="e#4264#4270#0#HTML" expanded="true" />
           </folding>
         </state>
       </provider>

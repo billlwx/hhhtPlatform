@@ -16,6 +16,8 @@ Including another URLconf
 from django.conf.urls import url
 from django.contrib import admin
 from apo import views
+from django.contrib.staticfiles.urls import staticfiles_urlpatterns
+from django.contrib import staticfiles
 from apo import selectUid,deleteUserInfo,mcflush,whitelist
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
@@ -28,3 +30,5 @@ urlpatterns = [
     url(r'^selectwhitelist/$', whitelist.selectwhitelist),
     url(r'^updatewhitelist/$', whitelist.updatewhitelist),
 ]
+
+urlpatterns += staticfiles_urlpatterns()
