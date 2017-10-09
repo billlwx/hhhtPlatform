@@ -3,7 +3,8 @@ from django.http import HttpResponse
 
 def updatewhitelist(request):
     UID = request.GET['updateuid']
-    whiteMember = request.POST.getlist('whiteMember')
+    whiteMember = request.REQUEST.getlist('whiteMember')
+    print whiteMember
     if len(whiteMember)>0:
         db = DB('119.23.218.196', 33066, 'admin', 'admin#ROOT@ha', 'miloan')
         update = "UPDATE white_list_member set screen_keys = '%s' where user_id = '%s'" % (UID,whiteMember)
