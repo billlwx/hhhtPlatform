@@ -2,7 +2,6 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <img src="/static/images/logo.png">
     <title>hhhttestqa</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
 </head>
@@ -109,17 +108,17 @@
 <hr/>
 
 
-<h2>查询&添加白名单</h2>
-<form action="/selectwhitelist" method="get" id="js-form6" class="form-inline">
-    <label>请输入用户UID:</label>
-    <div class="form-group">
-        <input type="text" name="whitelistuid" class="form-control" placeholder="请输入用户UID" id="whitelistuid">
-    </div>
-
-    <button type="submit" class="btn btn-primary">查询</button>&nbsp;&nbsp;
-</form>
+{#<h2>查询&添加白名单</h2>#}
+{#<form action="/selectwhitelist" method="get" id="js-form6" class="form-inline">#}
+{#    <label>请输入用户UID:</label>#}
+{#    <div class="form-group">#}
+{#        <input type="text" name="whitelistuid" class="form-control" placeholder="请输入用户UID" id="whitelistuid">#}
+{#    </div>#}
+{##}
+{#    <button type="submit" class="btn btn-primary">查询</button>&nbsp;&nbsp;#}
+{#</form>#}
 <form action="/updatewhitelist" method="get" id="js-form7" class="form-inline">
-
+    <input type="text" name="whitelistuid" class="form-control" placeholder="请输入用户UID" id="whitelistuid">
     <label><input name="whiteMember" type="checkbox" value="product_white" />产品 </label>
     <label><input name="whiteMember" type="checkbox" value="pay_refund_suc" />还款成功 </label>
     <label><input name="whiteMember" type="checkbox" value="pay_refund_failed" />还款失败 </label>
@@ -127,7 +126,7 @@
     <label><input name="whiteMember" type="checkbox" value="pay_loan_failed" />放款失败 </label>
     <label><input name="whiteMember" type="checkbox" value="renewal_apply" />续期申请 </label>
     <label><input name="whiteMember" type="checkbox" value="credit_lift" />提额申请 </label>
-    <input  type="submit" value="Submit" class="btn btn-primary">更新&新增白名单</button>
+    <button  type="submit" onclick="fun()" class="btn btn-primary">更新&新增白名单</button>
 </form>
 <div id="msg6"></div>
 <script>
