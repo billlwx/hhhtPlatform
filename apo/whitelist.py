@@ -2,7 +2,7 @@ from MysqldbHelper import *
 from django.http import HttpResponse
 
 def updatewhitelist(request):
-    UID = request.GET['whitelistuid']
+    UID = request.GET['updateuid']
     whiteMember = request.REQUEST.getlist('whiteMember')
     db = DB('119.23.218.196', 33066, 'admin', 'admin#ROOT@ha', 'miloan')
     update = "UPDATE white_list_member set screen_keys = '%s' where user_id = '%s'" % (UID,whiteMember)
