@@ -140,7 +140,7 @@
     })
     $("#js-form7").on('submit', function (e) {
         e.preventDefault();
-        $.POST('/updatewhitelist', {updateuid: $("#updateuid").val(),whiteMember: $("#whiteMember").val()}).done(function(data) {
+        $.post('/updatewhitelist', {updateuid: $("#updateuid").val(),whiteMember: $("#whiteMember").val()}).done(function(data) {
             $("#msg6").html(data);
         })
     })
