@@ -119,16 +119,15 @@
 </form>
 <form action="/updatewhitelist" method="get" id="js-form7" class="form-inline">
     <input type="text" name="updateuid" class="form-control" placeholder="请输入用户UID" id="updateuid">
-    <button  type="submit" onclick="fun()" class="btn btn-primary">更新&新增白名单</button>
     <br/>
-    <label><input name="whiteMember" type="checkbox" value="product_white" />产品 </label>
-    <label><input name="whiteMember" type="checkbox" value="pay_refund_suc" />还款成功 </label>
-    <label><input name="whiteMember" type="checkbox" value="pay_refund_failed" />还款失败 </label>
-    <label><input name="whiteMember" type="checkbox" value="pay_loan_suc" />放款成功 </label>
-    <label><input name="whiteMember" type="checkbox" value="pay_loan_failed" />放款失败 </label>
-    <label><input name="whiteMember" type="checkbox" value="renewal_apply" />续期申请 </label>
-    <label><input name="whiteMember" type="checkbox" value="credit_lift" />提额申请 </label>
-
+    <input name="whiteMember" type="checkbox" value="product_white" />产品
+    <input name="whiteMember" type="checkbox" value="pay_refund_suc" />还款成功
+    <input name="whiteMember" type="checkbox" value="pay_refund_failed" />还款失败
+    <input name="whiteMember" type="checkbox" value="pay_loan_suc" />放款成功
+    <input name="whiteMember" type="checkbox" value="pay_loan_failed" />放款失败
+    <input name="whiteMember" type="checkbox" value="renewal_apply" />续期申请
+    <input name="whiteMember" type="checkbox" value="credit_lift" />提额申请
+    <input type="submit" value="更新白名单"/>
 </form>
 <div id="msg6"></div>
 <script>
