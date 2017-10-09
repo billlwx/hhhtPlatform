@@ -4,10 +4,12 @@ from django.http import HttpResponse
 def updatewhitelist(request):
     UID = request.GET['updateuid']
     whiteMember = request.POST.getlist('whiteMember')
-    db = DB('119.23.218.196', 33066, 'admin', 'admin#ROOT@ha', 'miloan')
-    update = "UPDATE white_list_member set screen_keys = '%s' where user_id = '%s'" % (UID,whiteMember)
-    db.update(update)
-    return HttpResponse({'succes'})
+    if len(whiteMember)>0:
+        db = DB('119.23.218.196', 33066, 'admin', 'admin#ROOT@ha', 'miloan')
+        update = "UPDATE white_list_member set screen_keys = '%s' where user_id = '%s'" % (UID,whiteMember)
+        db.update(update)
+        return HttpResponse({'succes'})
+    return HttpResponse({'false'})
 
 
 def selectwhitelist(request):
