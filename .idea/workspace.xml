@@ -25,10 +25,10 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-304">
-              <caret line="111" column="14" lean-forward="false" selection-start-line="111" selection-start-column="14" selection-end-line="111" selection-end-column="14" />
+            <state relative-caret-position="418">
+              <caret line="149" column="94" lean-forward="true" selection-start-line="149" selection-start-column="94" selection-end-line="149" selection-end-column="94" />
               <folding>
-                <element signature="e#4216#4222#0#HTML" expanded="true" />
+                <element signature="e#4232#4238#0#HTML" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -49,8 +49,8 @@
       <file leaf-file-name="whitelist.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/apo/whitelist.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="123">
-              <caret line="8" column="35" lean-forward="false" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="35" />
+            <state relative-caret-position="209">
+              <caret line="11" column="26" lean-forward="false" selection-start-line="11" selection-start-column="26" selection-end-line="11" selection-end-column="26" />
               <folding>
                 <element signature="e#0#27#0" expanded="true" />
                 <marker date="1507628348991" expanded="true" signature="481:549" ph="UPDATE white... " />
@@ -388,13 +388,6 @@
       <option name="presentableId" value="Default" />
       <updated>1505633200199</updated>
     </task>
-    <task id="LOCAL-00052" summary="白名单">
-      <created>1506421437913</created>
-      <option name="number" value="00052" />
-      <option name="presentableId" value="LOCAL-00052" />
-      <option name="project" value="LOCAL" />
-      <updated>1506421437913</updated>
-    </task>
     <task id="LOCAL-00053" summary="白名单">
       <created>1506479148012</created>
       <option name="number" value="00053" />
@@ -731,7 +724,14 @@
       <option name="project" value="LOCAL" />
       <updated>1507633036233</updated>
     </task>
-    <option name="localTasksCounter" value="101" />
+    <task id="LOCAL-00101" summary="样式">
+      <created>1507633322397</created>
+      <option name="number" value="00101" />
+      <option name="presentableId" value="LOCAL-00101" />
+      <option name="project" value="LOCAL" />
+      <updated>1507633322397</updated>
+    </task>
+    <option name="localTasksCounter" value="102" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -797,7 +797,7 @@
         <state relative-caret-position="2470">
           <caret line="130" column="21" lean-forward="false" selection-start-line="130" selection-start-column="21" selection-end-line="130" selection-end-column="21" />
           <folding>
-            <element signature="e#4216#4222#0#HTML" expanded="true" />
+            <element signature="e#4232#4238#0#HTML" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1052,6 +1052,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/apo/whitelist.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="11" column="26" lean-forward="false" selection-start-line="11" selection-start-column="26" selection-end-line="11" selection-end-column="26" />
+          <folding>
+            <element signature="e#0#27#0" expanded="true" />
+            <marker date="1507628348991" expanded="true" signature="481:549" ph="UPDATE white... " />
+            <marker date="1507628348991" expanded="true" signature="851:903" ph="select * fro... white_list_member" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/apo/views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="152">
@@ -1062,24 +1074,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/apo/whitelist.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="123">
-          <caret line="8" column="35" lean-forward="false" selection-start-line="8" selection-start-column="23" selection-end-line="8" selection-end-column="35" />
-          <folding>
-            <element signature="e#0#27#0" expanded="true" />
-            <marker date="1507628348991" expanded="true" signature="481:549" ph="UPDATE white... " />
-            <marker date="1507628348991" expanded="true" signature="851:903" ph="select * fro... white_list_member" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-304">
-          <caret line="111" column="14" lean-forward="false" selection-start-line="111" selection-start-column="14" selection-end-line="111" selection-end-column="14" />
+        <state relative-caret-position="418">
+          <caret line="149" column="94" lean-forward="true" selection-start-line="149" selection-start-column="94" selection-end-line="149" selection-end-column="94" />
           <folding>
-            <element signature="e#4216#4222#0#HTML" expanded="true" />
+            <element signature="e#4232#4238#0#HTML" expanded="true" />
           </folding>
         </state>
       </provider>

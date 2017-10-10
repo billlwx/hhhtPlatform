@@ -109,13 +109,19 @@
 
 
 <h2>查询&添加白名单</h2>
-<form action="" method="get" id="js-form6" class="form-inline">
+<form action="/selectwhitelist" method="get" id="js-form6" class="form-inline">
     <label>请输入用户UID:</label>
     <div class="form-group">
         <input type="text" name="whitelistuid" class="form-control" placeholder="请输入用户UID" id="whitelistuid">
     </div>
 
     <button type="submit" class="btn btn-primary" name="select">查询</button>&nbsp;
+
+</form>
+
+
+<form action="/updatewhitelist" method="POST" id="js-form7" class="form-inline">
+
     <button type="submit" class="btn btn-primary" naem="update">更新白名单</button>
     <div class="form-group">
     <input type="checkbox" name="whiteMember" value="product_white" />产品白名单
@@ -126,27 +132,22 @@
     <input type="checkbox" name="whiteMember" value="renewal_apply" />续期申请
     <input type="checkbox" name="whiteMember" value="credit_lift" />提额申请
     </div>
+
 </form>
-
-
-{#<form action="/updatewhitelist" method="POST" id="js-form7" class="form-inline">#}
-{#    <input type="text" name="updateuid" class="form-control" placeholder="请输入用户UID" id="updateuid">#}
-{#    <br/>#}
-{##}
-{#</form>#}
 
 <div id="msg6"></div>
 <script>
-    $("#js-form6").on('select', function (e) {
+    $("#js-form6").on('submit', function (e) {
         e.preventDefault();
         $.get('/selectwhitelist', {whitelistuid: $("#whitelistuid").val()}).done(function(data) {
             $("#msg6").html(data);
         })
     })
-    $("#js-form6").on('update', function (e) {
+    $("#js-form7").on('submit', function (e) {
         e.preventDefault();
-        var params = $("#js-form6").serializeArray();
-        $.get('/updatewhitelist', params).done(function(data) {
+        var member = $("#js-form7").whiteMember.val();
+        var uid = $("#js-form6").whitelistuid().val();
+        $.get('/updatewhitelist', {whiteMember:member,whitelistuid:uid}).done(function(data) {
             $("#msg6").html(data);
         })
     })
