@@ -121,18 +121,19 @@
 
 <script type="text/javascript">
 //页面取到选中的值
-function aa() {
-var bb = "";
-var temp = "";
-var a = document.getElementsByName("whiteMember");
-for ( var i = 0; i < a.length; i++) {
-if (a[i].checked) {
-temp = a[i].value;
-bb = bb + "," +temp;
-}
-}
-document.getElementById("tempString").value = bb
-.substring(1, bb.length);
+function check_white()
+{
+
+    var whiteName = document.getElementsByName("whiteMember");
+
+    for(var i = 0; i < whiteName.length; i++)
+    {
+       if(whiteName[i].checked == true)
+       {
+          var a = whiteName[i].value;
+       }
+    }
+    return whiteName
 }
   </script>
 
