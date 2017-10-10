@@ -6,7 +6,7 @@ def getresult(request):
     return check_box_list
 
 def updatewhitelist(request):
-    UID = request.GET['updateuid']
+    UID = request.GET['whitelistuid']
     whiteMember = request.GET.getlist('whiteMember')
     print whiteMember
     if len(whiteMember)>0:
