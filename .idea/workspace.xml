@@ -25,8 +25,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="131" column="62" lean-forward="false" selection-start-line="131" selection-start-column="62" selection-end-line="131" selection-end-column="62" />
+            <state relative-caret-position="456">
+              <caret line="145" column="53" lean-forward="true" selection-start-line="145" selection-start-column="53" selection-end-line="145" selection-end-column="53" />
               <folding />
             </state>
           </provider>
@@ -166,8 +166,8 @@
       <find>MIDDLEWAREMIDDLEWARE_CLASSES</find>
       <find>modifyUserUid</find>
       <find>APPEND</find>
-      <find>updateuid</find>
       <find>whitelistuid</find>
+      <find>updateuid</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -205,8 +205,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="694" />
-    <option name="y" value="6" />
+    <option name="x" value="982" />
+    <option name="y" value="92" />
     <option name="width" value="1213" />
     <option name="height" value="1025" />
   </component>
@@ -385,13 +385,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1505633200199</updated>
-    </task>
-    <task id="LOCAL-00041" summary="白名单">
-      <created>1506416520456</created>
-      <option name="number" value="00041" />
-      <option name="presentableId" value="LOCAL-00041" />
-      <option name="project" value="LOCAL" />
-      <updated>1506416520456</updated>
     </task>
     <task id="LOCAL-00042" summary="白名单">
       <created>1506417089075</created>
@@ -729,7 +722,14 @@
       <option name="project" value="LOCAL" />
       <updated>1507627257660</updated>
     </task>
-    <option name="localTasksCounter" value="90" />
+    <task id="LOCAL-00090" summary="样式">
+      <created>1507627336994</created>
+      <option name="number" value="00090" />
+      <option name="presentableId" value="LOCAL-00090" />
+      <option name="project" value="LOCAL" />
+      <updated>1507627336994</updated>
+    </task>
+    <option name="localTasksCounter" value="91" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -780,7 +780,8 @@
     <MESSAGE value="添加静态资源" />
     <MESSAGE value="test" />
     <MESSAGE value="白名单" />
-    <option name="LAST_COMMIT_MESSAGE" value="白名单" />
+    <MESSAGE value="样式" />
+    <option name="LAST_COMMIT_MESSAGE" value="样式" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1071,8 +1072,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="131" column="62" lean-forward="false" selection-start-line="131" selection-start-column="62" selection-end-line="131" selection-end-column="62" />
+        <state relative-caret-position="456">
+          <caret line="145" column="53" lean-forward="true" selection-start-line="145" selection-start-column="53" selection-end-line="145" selection-end-column="53" />
           <folding />
         </state>
       </provider>

@@ -120,8 +120,8 @@
 
 
 <form action="/updatewhitelist" method="POST" id="js-form7" class="form-inline">
-    <input type="text" name="updateuid" class="form-control" placeholder="请输入用户UID" id="updateuid">
-    <br/>
+{#    <input type="text" name="updateuid" class="form-control" placeholder="请输入用户UID" id="updateuid">#}
+{#    <br/>#}
     <input type="checkbox" name="whiteMember" value="product_white" />产品白名单
     <input type="checkbox" name="whiteMember" value="pay_refund_suc" />还款成功
     <input type="checkbox" name="whiteMember" value="pay_refund_failed" />还款失败
@@ -142,8 +142,9 @@
     })
     $("#js-form7").on('submit', function (e) {
         e.preventDefault();
+        var updateuid = $("#js-form6").serializeArray();
         var params = $("#js-form7").serializeArray();
-        $.get('/updatewhitelist', params).done(function(data) {
+        $.get('/updatewhitelist', params,updateuid).done(function(data) {
             $("#msg6").html(data);
         })
     })
