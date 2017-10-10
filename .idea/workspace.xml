@@ -3,6 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="5ceede38-904b-4e94-a262-26cf0c7b7444" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apo/tests.py" afterPath="$PROJECT_DIR$/apo/tests.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apo/whitelist.py" afterPath="$PROJECT_DIR$/apo/whitelist.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/index.html" afterPath="$PROJECT_DIR$/templates/index.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -15,17 +17,18 @@
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/hhht$tests.coverage" NAME="tests Coverage Results" MODIFIED="1505844771258" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/apo" />
     <SUITE FILE_PATH="coverage/hhht$deleteUserInfo.coverage" NAME="deleteUserInfo Coverage Results" MODIFIED="1505843692559" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/apo" />
+    <SUITE FILE_PATH="coverage/python$tests.coverage" NAME="tests Coverage Results" MODIFIED="1507622419162" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/apo" />
   </component>
   <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
     <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="722">
-              <caret line="134" column="5" lean-forward="true" selection-start-line="134" selection-start-column="5" selection-end-line="134" selection-end-column="5" />
+            <state relative-caret-position="437">
+              <caret line="131" column="40" lean-forward="true" selection-start-line="131" selection-start-column="40" selection-end-line="131" selection-end-column="40" />
               <folding />
             </state>
           </provider>
@@ -35,7 +38,7 @@
         <entry file="file://$PROJECT_DIR$/apo/views.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="152">
-              <caret line="8" column="25" lean-forward="true" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="25" />
+              <caret line="8" column="25" lean-forward="false" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="25" />
               <folding>
                 <element signature="e#25#64#0" expanded="true" />
               </folding>
@@ -43,28 +46,28 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="whitelist.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="whitelist.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/apo/whitelist.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="171">
-              <caret line="9" column="29" lean-forward="false" selection-start-line="9" selection-start-column="29" selection-end-line="9" selection-end-column="29" />
+            <state relative-caret-position="190">
+              <caret line="10" column="21" lean-forward="true" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="21" />
               <folding>
                 <element signature="e#0#27#0" expanded="true" />
-                <marker date="1507617769890" expanded="true" signature="450:518" ph="UPDATE white... " />
-                <marker date="1507617769890" expanded="true" signature="456:518" ph="UPDATE miloa... " />
-                <marker date="1507617769890" expanded="true" signature="813:865" ph="select * fro... white_list_member" />
+                <marker date="1507624091735" expanded="true" signature="451:519" ph="UPDATE white... " />
+                <marker date="1507624091735" expanded="true" signature="457:519" ph="UPDATE miloa... " />
+                <marker date="1507624091735" expanded="true" signature="814:866" ph="select * fro... white_list_member" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/hhht/urls.py">
+      <file leaf-file-name="tests.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/apo/tests.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="366">
-              <caret line="31" column="1" lean-forward="true" selection-start-line="31" selection-start-column="1" selection-end-line="31" selection-end-column="1" />
+            <state relative-caret-position="171">
+              <caret line="9" column="21" lean-forward="true" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
               <folding>
-                <element signature="e#638#670#0" expanded="true" />
+                <element signature="e#24#63#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -74,7 +77,7 @@
         <entry file="file://$PROJECT_DIR$/apo/deleteUserInfo.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-323">
-              <caret line="4" column="28" lean-forward="true" selection-start-line="4" selection-start-column="28" selection-end-line="4" selection-end-column="28" />
+              <caret line="4" column="28" lean-forward="false" selection-start-line="4" selection-start-column="28" selection-end-line="4" selection-end-column="28" />
               <folding>
                 <element signature="e#0#27#0" expanded="true" />
                 <marker date="1506419570288" expanded="true" signature="965:1000" ph="DELETE from " />
@@ -119,7 +122,7 @@
         <entry file="file://$PROJECT_DIR$/apo/selectUid.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="228">
-              <caret line="13" column="27" lean-forward="true" selection-start-line="12" selection-start-column="8" selection-end-line="13" selection-end-column="27" />
+              <caret line="13" column="27" lean-forward="false" selection-start-line="12" selection-start-column="8" selection-end-line="13" selection-end-column="27" />
               <folding>
                 <marker date="1506153197559" expanded="true" signature="209:258" ph="select * fro... user" />
               </folding>
@@ -131,7 +134,7 @@
         <entry file="file://$PROJECT_DIR$/hhht/settings.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-973">
-              <caret line="80" column="16" lean-forward="true" selection-start-line="80" selection-start-column="16" selection-end-line="80" selection-end-column="16" />
+              <caret line="80" column="16" lean-forward="false" selection-start-line="80" selection-start-column="16" selection-end-line="80" selection-end-column="16" />
               <folding>
                 <element signature="e#308#317#0" expanded="true" />
               </folding>
@@ -164,9 +167,9 @@
       <find>modifyUserInfo</find>
       <find>INSTALLED_APPS</find>
       <find>MIDDLEWAREMIDDLEWARE_CLASSES</find>
-      <find>whitelistuid</find>
       <find>modifyUserUid</find>
       <find>APPEND</find>
+      <find>whitelistuid</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -179,7 +182,6 @@
         <option value="$PROJECT_DIR$/apo/api.py" />
         <option value="$PROJECT_DIR$/apo/templates/index.html" />
         <option value="$PROJECT_DIR$/apo/templates/search.html" />
-        <option value="$PROJECT_DIR$/apo/tests.py" />
         <option value="$PROJECT_DIR$/apo/MysqldbHelper.py" />
         <option value="$PROJECT_DIR$/apo/migrations/redis.py" />
         <option value="$PROJECT_DIR$/redis.py" />
@@ -192,8 +194,9 @@
         <option value="$PROJECT_DIR$/hhht/settings.py" />
         <option value="$PROJECT_DIR$/apo/deleteUserInfo.py" />
         <option value="$PROJECT_DIR$/hhht/urls.py" />
-        <option value="$PROJECT_DIR$/apo/whitelist.py" />
         <option value="$PROJECT_DIR$/templates/index.html" />
+        <option value="$PROJECT_DIR$/apo/tests.py" />
+        <option value="$PROJECT_DIR$/apo/whitelist.py" />
       </list>
     </option>
   </component>
@@ -204,8 +207,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="809" />
-    <option name="y" value="8" />
+    <option name="x" value="694" />
+    <option name="y" value="6" />
     <option name="width" value="1213" />
     <option name="height" value="1025" />
   </component>
@@ -278,6 +281,7 @@
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../django-cms" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -301,7 +305,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Django server.hhht">
+  <component name="RunManager" selected="Python.tests">
     <configuration name="deleteUserInfo" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -383,13 +387,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1505633200199</updated>
-    </task>
-    <task id="LOCAL-00032" summary="刷新mc缓存">
-      <created>1506330819544</created>
-      <option name="number" value="00032" />
-      <option name="presentableId" value="LOCAL-00032" />
-      <option name="project" value="LOCAL" />
-      <updated>1506330819544</updated>
     </task>
     <task id="LOCAL-00033" summary="刷新mc缓存">
       <created>1506331046722</created>
@@ -727,7 +724,14 @@
       <option name="project" value="LOCAL" />
       <updated>1507618386474</updated>
     </task>
-    <option name="localTasksCounter" value="81" />
+    <task id="LOCAL-00081" summary="白名单">
+      <created>1507618862631</created>
+      <option name="number" value="00081" />
+      <option name="presentableId" value="LOCAL-00081" />
+      <option name="project" value="LOCAL" />
+      <updated>1507618862631</updated>
+    </task>
+    <option name="localTasksCounter" value="82" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -739,9 +743,9 @@
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3294964" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.38394794" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.38394794" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.36008677" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.36008677" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -811,9 +815,9 @@
           <caret line="3" column="19" lean-forward="false" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="19" />
           <folding>
             <element signature="e#0#27#0" expanded="true" />
-            <marker date="1507617769890" expanded="true" signature="450:518" ph="UPDATE white... " />
-            <marker date="1507617769890" expanded="true" signature="456:518" ph="UPDATE miloa... " />
-            <marker date="1507617769890" expanded="true" signature="813:865" ph="select * fro... white_list_member" />
+            <marker date="1507624091735" expanded="true" signature="451:519" ph="UPDATE white... " />
+            <marker date="1507624091735" expanded="true" signature="457:519" ph="UPDATE miloa... " />
+            <marker date="1507624091735" expanded="true" signature="814:866" ph="select * fro... white_list_member" />
           </folding>
         </state>
       </provider>
@@ -852,9 +856,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="57">
           <caret line="3" column="28" lean-forward="true" selection-start-line="3" selection-start-column="28" selection-end-line="3" selection-end-column="28" />
-          <folding>
-            <element signature="e#24#63#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -924,13 +926,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/apo/tests.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="20" lean-forward="true" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/hhht/wsgi.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
@@ -981,7 +976,7 @@
     <entry file="file://$PROJECT_DIR$/hhht/urls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="366">
-          <caret line="31" column="1" lean-forward="true" selection-start-line="31" selection-start-column="1" selection-end-line="31" selection-end-column="1" />
+          <caret line="31" column="1" lean-forward="false" selection-start-line="31" selection-start-column="1" selection-end-line="31" selection-end-column="1" />
           <folding>
             <element signature="e#638#670#0" expanded="true" />
           </folding>
@@ -991,22 +986,9 @@
     <entry file="file://$PROJECT_DIR$/apo/views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="152">
-          <caret line="8" column="25" lean-forward="true" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="25" />
+          <caret line="8" column="25" lean-forward="false" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="25" />
           <folding>
             <element signature="e#25#64#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apo/whitelist.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="9" column="29" lean-forward="false" selection-start-line="9" selection-start-column="29" selection-end-line="9" selection-end-column="29" />
-          <folding>
-            <element signature="e#0#27#0" expanded="true" />
-            <marker date="1507617769890" expanded="true" signature="450:518" ph="UPDATE white... " />
-            <marker date="1507617769890" expanded="true" signature="456:518" ph="UPDATE miloa... " />
-            <marker date="1507617769890" expanded="true" signature="813:865" ph="select * fro... white_list_member" />
           </folding>
         </state>
       </provider>
@@ -1014,7 +996,7 @@
     <entry file="file://$PROJECT_DIR$/apo/deleteUserInfo.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-323">
-          <caret line="4" column="28" lean-forward="true" selection-start-line="4" selection-start-column="28" selection-end-line="4" selection-end-column="28" />
+          <caret line="4" column="28" lean-forward="false" selection-start-line="4" selection-start-column="28" selection-end-line="4" selection-end-column="28" />
           <folding>
             <element signature="e#0#27#0" expanded="true" />
             <marker date="1506419570288" expanded="true" signature="965:1000" ph="DELETE from " />
@@ -1036,9 +1018,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="19">
           <caret line="3" column="28" lean-forward="false" selection-start-line="3" selection-start-column="28" selection-end-line="3" selection-end-column="28" />
-          <folding>
-            <element signature="e#24#63#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1053,7 +1033,7 @@
     <entry file="file://$PROJECT_DIR$/apo/selectUid.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="228">
-          <caret line="13" column="27" lean-forward="true" selection-start-line="12" selection-start-column="8" selection-end-line="13" selection-end-column="27" />
+          <caret line="13" column="27" lean-forward="false" selection-start-line="12" selection-start-column="8" selection-end-line="13" selection-end-column="27" />
           <folding>
             <marker date="1506153197559" expanded="true" signature="209:258" ph="select * fro... user" />
           </folding>
@@ -1063,18 +1043,41 @@
     <entry file="file://$PROJECT_DIR$/hhht/settings.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-973">
-          <caret line="80" column="16" lean-forward="true" selection-start-line="80" selection-start-column="16" selection-end-line="80" selection-end-column="16" />
+          <caret line="80" column="16" lean-forward="false" selection-start-line="80" selection-start-column="16" selection-end-line="80" selection-end-column="16" />
           <folding>
             <element signature="e#308#317#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/apo/tests.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="9" column="21" lean-forward="true" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
+          <folding>
+            <element signature="e#24#63#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/templates/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="722">
-          <caret line="134" column="5" lean-forward="true" selection-start-line="134" selection-start-column="5" selection-end-line="134" selection-end-column="5" />
+        <state relative-caret-position="437">
+          <caret line="131" column="40" lean-forward="true" selection-start-line="131" selection-start-column="40" selection-end-line="131" selection-end-column="40" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apo/whitelist.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="10" column="21" lean-forward="true" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="21" />
+          <folding>
+            <element signature="e#0#27#0" expanded="true" />
+            <marker date="1507624091735" expanded="true" signature="451:519" ph="UPDATE white... " />
+            <marker date="1507624091735" expanded="true" signature="457:519" ph="UPDATE miloa... " />
+            <marker date="1507624091735" expanded="true" signature="814:866" ph="select * fro... white_list_member" />
+          </folding>
         </state>
       </provider>
     </entry>

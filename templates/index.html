@@ -119,38 +119,17 @@
 </form>
 
 
-<script type="text/javascript">
-//页面取到选中的值
-function check_white()
-{
-
-    var whiteName = document.getElementsByName("whiteMember");
-
-    for(var i = 0; i < whiteName.length; i++)
-    {
-       if(whiteName[i].checked == true)
-       {
-          var a = whiteName[i].value;
-       }
-    }
-    return whiteName
-}
-  </script>
-
-
-
-<form action="/updatewhitelist" method="get" id="js-form7" class="form-inline">
+<form action="/updatewhitelist" method="post" id="js-form7" class="form-inline">
 {#    <input type="text" name="updateuid" class="form-control" placeholder="请输入用户UID" id="updateuid">#}
 {#    <br/>#}
-    <input name="whiteMember" type="checkbox" value="product_white" />product_white
-    <input name="whiteMember" type="checkbox" value="pay_refund_suc" />pay_refund_suc
-    <input name="whiteMember" type="checkbox" value="pay_refund_failed" />pay_refund_failed
-    <input name="whiteMember" type="checkbox" value="pay_loan_suc" />pay_loan_suc
-    <input name="whiteMember" type="checkbox" value="pay_loan_failed" />pay_loan_failed
-    <input name="whiteMember" type="checkbox" value="renewal_apply" />renewal_apply
-    <input name="whiteMember" type="checkbox" value="credit_lift" />credit_lift
-    <input type="hidden" id="tempString" name="tempString" />
-    <input type="submit" value="更新白名单" onclick="aa();"/>
+    <input type="checkbox" name="whiteMember" value="product_white" />product_white
+    <input type="checkbox" name="whiteMember" value="pay_refund_suc" />pay_refund_suc
+    <input type="checkbox" name="whiteMember" value="pay_refund_failed" />pay_refund_failed
+    <input type="checkbox" name="whiteMember" value="pay_loan_suc" />pay_loan_suc
+    <input type="checkbox" name="whiteMember" value="pay_loan_failed" />pay_loan_failed
+    <input type="checkbox" name="whiteMember" value="renewal_apply" />renewal_apply
+    <input type="checkbox" name="whiteMember" value="credit_lift" />credit_lift
+    <input type="submit" value="更新白名单"/>
 </form>
 
 <div id="msg6"></div>
