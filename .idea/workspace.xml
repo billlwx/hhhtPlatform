@@ -26,7 +26,7 @@
         <entry file="file://$PROJECT_DIR$/templates/index.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="390">
-              <caret line="131" column="61" lean-forward="true" selection-start-line="131" selection-start-column="61" selection-end-line="131" selection-end-column="61" />
+              <caret line="131" column="62" lean-forward="false" selection-start-line="131" selection-start-column="62" selection-end-line="131" selection-end-column="62" />
               <folding />
             </state>
           </provider>
@@ -386,13 +386,6 @@
       <option name="presentableId" value="Default" />
       <updated>1505633200199</updated>
     </task>
-    <task id="LOCAL-00040" summary="白名单">
-      <created>1506416370785</created>
-      <option name="number" value="00040" />
-      <option name="presentableId" value="LOCAL-00040" />
-      <option name="project" value="LOCAL" />
-      <updated>1506416370785</updated>
-    </task>
     <task id="LOCAL-00041" summary="白名单">
       <created>1506416520456</created>
       <option name="number" value="00041" />
@@ -729,7 +722,14 @@
       <option name="project" value="LOCAL" />
       <updated>1507626950200</updated>
     </task>
-    <option name="localTasksCounter" value="89" />
+    <task id="LOCAL-00089" summary="白名单">
+      <created>1507627257660</created>
+      <option name="number" value="00089" />
+      <option name="presentableId" value="LOCAL-00089" />
+      <option name="project" value="LOCAL" />
+      <updated>1507627257660</updated>
+    </task>
+    <option name="localTasksCounter" value="90" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1072,7 +1072,7 @@
     <entry file="file://$PROJECT_DIR$/templates/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="390">
-          <caret line="131" column="61" lean-forward="true" selection-start-line="131" selection-start-column="61" selection-end-line="131" selection-end-column="61" />
+          <caret line="131" column="62" lean-forward="false" selection-start-line="131" selection-start-column="62" selection-end-line="131" selection-end-column="62" />
           <folding />
         </state>
       </provider>
