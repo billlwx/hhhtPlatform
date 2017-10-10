@@ -142,9 +142,9 @@
     })
     $("#js-form7").on('submit', function (e) {
         e.preventDefault();
-        var updateuid = $("#js-form6").serializeArray();
-        var params = $("#js-form7").serializeArray();
-        $.get('/updatewhitelist', (params,updateuid)).done(function(data) {
+        var updateuid = $("#js-form6").serialize();
+        var params = $("#js-form7").serialize();
+        $.get('/updatewhitelist', {whiteMember:params,whitelistuid:updateuid}).done(function(data) {
             $("#msg6").html(data);
         })
     })
