@@ -119,7 +119,7 @@
 </form>
 
 
-<form action="/updatewhitelist" method="post" id="js-form7" class="form-inline">
+<form action="/updatewhitelist" method="POST" id="js-form7" class="form-inline">
 {#    <input type="text" name="updateuid" class="form-control" placeholder="请输入用户UID" id="updateuid">#}
 {#    <br/>#}
     <input type="checkbox" name="whiteMember" value="product_white" />product_white
@@ -142,7 +142,8 @@
     })
     $("#js-form7").on('submit', function (e) {
         e.preventDefault();
-        $.get('/updatewhitelist', {updateuid: $("#updateuid").val(),whiteMember: $("#whiteMember").val()}).done(function(data) {
+        $("#whiteMember").val()
+        $.get('/updatewhitelist', {updateuid: $("#updateuid").val(),whiteMember: 'credit_lift'}).done(function(data) {
             $("#msg6").html(data);
         })
     })

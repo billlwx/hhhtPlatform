@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="5ceede38-904b-4e94-a262-26cf0c7b7444" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apo/tests.py" afterPath="$PROJECT_DIR$/apo/tests.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apo/whitelist.py" afterPath="$PROJECT_DIR$/apo/whitelist.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/index.html" afterPath="$PROJECT_DIR$/templates/index.html" />
     </list>
@@ -27,8 +26,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="437">
-              <caret line="131" column="40" lean-forward="true" selection-start-line="131" selection-start-column="40" selection-end-line="131" selection-end-column="40" />
+            <state relative-caret-position="250">
+              <caret line="145" column="13" lean-forward="false" selection-start-line="145" selection-start-column="10" selection-end-line="145" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -53,9 +52,9 @@
               <caret line="10" column="21" lean-forward="true" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="21" />
               <folding>
                 <element signature="e#0#27#0" expanded="true" />
-                <marker date="1507624091735" expanded="true" signature="451:519" ph="UPDATE white... " />
-                <marker date="1507624091735" expanded="true" signature="457:519" ph="UPDATE miloa... " />
-                <marker date="1507624091735" expanded="true" signature="814:866" ph="select * fro... white_list_member" />
+                <marker date="1507625580861" expanded="true" signature="450:518" ph="UPDATE white... " />
+                <marker date="1507625580861" expanded="true" signature="456:518" ph="UPDATE miloa... " />
+                <marker date="1507625580861" expanded="true" signature="813:865" ph="select * fro... white_list_member" />
               </folding>
             </state>
           </provider>
@@ -194,8 +193,8 @@
         <option value="$PROJECT_DIR$/hhht/settings.py" />
         <option value="$PROJECT_DIR$/apo/deleteUserInfo.py" />
         <option value="$PROJECT_DIR$/hhht/urls.py" />
-        <option value="$PROJECT_DIR$/templates/index.html" />
         <option value="$PROJECT_DIR$/apo/tests.py" />
+        <option value="$PROJECT_DIR$/templates/index.html" />
         <option value="$PROJECT_DIR$/apo/whitelist.py" />
       </list>
     </option>
@@ -387,13 +386,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1505633200199</updated>
-    </task>
-    <task id="LOCAL-00033" summary="刷新mc缓存">
-      <created>1506331046722</created>
-      <option name="number" value="00033" />
-      <option name="presentableId" value="LOCAL-00033" />
-      <option name="project" value="LOCAL" />
-      <updated>1506331046722</updated>
     </task>
     <task id="LOCAL-00034" summary="刷新mc缓存">
       <created>1506331289341</created>
@@ -731,7 +723,14 @@
       <option name="project" value="LOCAL" />
       <updated>1507618862631</updated>
     </task>
-    <option name="localTasksCounter" value="82" />
+    <task id="LOCAL-00082" summary="白名单">
+      <created>1507624278977</created>
+      <option name="number" value="00082" />
+      <option name="presentableId" value="LOCAL-00082" />
+      <option name="project" value="LOCAL" />
+      <updated>1507624278977</updated>
+    </task>
+    <option name="localTasksCounter" value="83" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -815,9 +814,9 @@
           <caret line="3" column="19" lean-forward="false" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="19" />
           <folding>
             <element signature="e#0#27#0" expanded="true" />
-            <marker date="1507624091735" expanded="true" signature="451:519" ph="UPDATE white... " />
-            <marker date="1507624091735" expanded="true" signature="457:519" ph="UPDATE miloa... " />
-            <marker date="1507624091735" expanded="true" signature="814:866" ph="select * fro... white_list_member" />
+            <marker date="1507625580861" expanded="true" signature="450:518" ph="UPDATE white... " />
+            <marker date="1507625580861" expanded="true" signature="456:518" ph="UPDATE miloa... " />
+            <marker date="1507625580861" expanded="true" signature="813:865" ph="select * fro... white_list_member" />
           </folding>
         </state>
       </provider>
@@ -1062,8 +1061,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="131" column="40" lean-forward="true" selection-start-line="131" selection-start-column="40" selection-end-line="131" selection-end-column="40" />
+        <state relative-caret-position="250">
+          <caret line="145" column="13" lean-forward="false" selection-start-line="145" selection-start-column="10" selection-end-line="145" selection-end-column="13" />
           <folding />
         </state>
       </provider>
@@ -1074,9 +1073,9 @@
           <caret line="10" column="21" lean-forward="true" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="21" />
           <folding>
             <element signature="e#0#27#0" expanded="true" />
-            <marker date="1507624091735" expanded="true" signature="451:519" ph="UPDATE white... " />
-            <marker date="1507624091735" expanded="true" signature="457:519" ph="UPDATE miloa... " />
-            <marker date="1507624091735" expanded="true" signature="814:866" ph="select * fro... white_list_member" />
+            <marker date="1507625580861" expanded="true" signature="450:518" ph="UPDATE white... " />
+            <marker date="1507625580861" expanded="true" signature="456:518" ph="UPDATE miloa... " />
+            <marker date="1507625580861" expanded="true" signature="813:865" ph="select * fro... white_list_member" />
           </folding>
         </state>
       </provider>
