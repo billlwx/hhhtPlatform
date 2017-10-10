@@ -121,7 +121,7 @@
 
 
 <form action="/updatewhitelist" method="POST" id="js-form7" class="form-inline">
-
+    <input type="text" name="whitelistuid" class="form-control" placeholder="请输入用户UID" id="whitelistuid">
     <button type="submit" class="btn btn-primary" naem="update">更新白名单</button>
     <div class="form-group">
     <input type="checkbox" name="whiteMember" value="product_white" />产品白名单
@@ -145,9 +145,9 @@
     })
     $("#js-form7").on('submit', function (e) {
         e.preventDefault();
-        var member = $("#js-form7").whiteMember.val();
-        var uid = $("#js-form6").whitelistuid().val();
-        $.get('/updatewhitelist', {whiteMember:member,whitelistuid:uid}).done(function(data) {
+        var member = $("#js-form7").serializeArray();
+        var uid = $("#js-form6").serializeArray();
+        $.get('/updatewhitelist', member).done(function(data) {
             $("#msg6").html(data);
         })
     })
