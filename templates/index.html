@@ -118,16 +118,16 @@
     <button type="submit" class="btn btn-primary">查询</button>&nbsp;&nbsp;
 </form>
 
-<form action="/updatewhitelist" method="post" id="js-form7" class="form-inline">
+<form action="/updatewhitelist" method="get" id="js-form7" class="form-inline">
     <input type="text" name="updateuid" class="form-control" placeholder="请输入用户UID" id="updateuid">
     <br/>
-    <input name="whiteMember" type="checkbox" value="product_white" />产品
-    <input name="whiteMember" type="checkbox" value="pay_refund_suc" />还款成功
-    <input name="whiteMember" type="checkbox" value="pay_refund_failed" />还款失败
-    <input name="whiteMember" type="checkbox" value="pay_loan_suc" />放款成功
-    <input name="whiteMember" type="checkbox" value="pay_loan_failed" />放款失败
-    <input name="whiteMember" type="checkbox" value="renewal_apply" />续期申请
-    <input name="whiteMember" type="checkbox" value="credit_lift" />提额申请
+    <input name="whiteMember" type="checkbox" value="product_white" />product_white
+    <input name="whiteMember" type="checkbox" value="pay_refund_suc" />pay_refund_suc
+    <input name="whiteMember" type="checkbox" value="pay_refund_failed" />pay_refund_failed
+    <input name="whiteMember" type="checkbox" value="pay_loan_suc" />pay_loan_suc
+    <input name="whiteMember" type="checkbox" value="pay_loan_failed" />pay_loan_failed
+    <input name="whiteMember" type="checkbox" value="renewal_apply" />renewal_apply
+    <input name="whiteMember" type="checkbox" value="credit_lift" />credit_lift
     <input type="submit" value="更新白名单"/>
 </form>
 <div id="msg6"></div>
@@ -140,7 +140,7 @@
     })
     $("#js-form7").on('submit', function (e) {
         e.preventDefault();
-        $.post('/updatewhitelist', {updateuid: $("#updateuid").val(),whiteMember: $("#whiteMember").val()}).done(function(data) {
+        $.get('/updatewhitelist', {updateuid: $("#updateuid").val(),whiteMember: $("#whiteMember").val()}).done(function(data) {
             $("#msg6").html(data);
         })
     })
