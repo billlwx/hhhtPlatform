@@ -118,6 +118,27 @@
     <button type="submit" class="btn btn-primary">查询</button>&nbsp;&nbsp;
 </form>
 
+
+<script type="text/javascript">
+//页面取到选中的值
+function check_white()
+{
+
+    var whiteName = document.getElementsByName("whiteMember");
+
+    for(var i = 0; i < whiteName.length; i++)
+    {
+       if(whiteName[i].checked == true)
+       {
+          var a = whiteName[i].value;
+          alert(a);
+       }
+    }
+}
+  </script>
+
+
+
 <form action="/updatewhitelist" method="get" id="js-form7" class="form-inline">
 {#    <input type="text" name="updateuid" class="form-control" placeholder="请输入用户UID" id="updateuid">#}
 {#    <br/>#}
@@ -128,8 +149,9 @@
     <input name="whiteMember" type="checkbox" value="pay_loan_failed" />pay_loan_failed
     <input name="whiteMember" type="checkbox" value="renewal_apply" />renewal_apply
     <input name="whiteMember" type="checkbox" value="credit_lift" />credit_lift
-    <input type="submit" value="更新白名单"/>
+    <input type="submit" value="更新白名单" onclick="check_white();"/>
 </form>
+
 <div id="msg6"></div>
 <script>
     $("#js-form6").on('submit', function (e) {
