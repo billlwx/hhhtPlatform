@@ -115,8 +115,9 @@
         <input type="text" name="whitelistuid" class="form-control" placeholder="请输入用户UID" id="whitelistuid">
     </div>
 
-    <button type="button" class="btn btn-primary">查询</button>&nbsp;&nbsp; <br/>
-
+    <button type="submit" class="btn btn-primary" name="select">查询</button><br/>
+    <button type="submit" class="btn btn-primary" naem="update">更新白名单</button>
+    <div class="form-group">
     <input type="checkbox" name="whiteMember" value="product_white" />产品白名单
     <input type="checkbox" name="whiteMember" value="pay_refund_suc" />还款成功
     <input type="checkbox" name="whiteMember" value="pay_refund_failed" />还款失败
@@ -124,7 +125,7 @@
     <input type="checkbox" name="whiteMember" value="pay_loan_failed" />借款失败
     <input type="checkbox" name="whiteMember" value="renewal_apply" />续期申请
     <input type="checkbox" name="whiteMember" value="credit_lift" />提额申请
-    <input type="submit" value="更新白名单" class="btn btn-primary"/>
+    </div>
 </form>
 
 
