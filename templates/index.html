@@ -137,13 +137,13 @@
 
 <div id="msg6"></div>
 <script>
-    $("#js-form6").on('button', function (e) {
+    $("#js-form6").on('select', function (e) {
         e.preventDefault();
         $.get('/selectwhitelist', {whitelistuid: $("#whitelistuid").val()}).done(function(data) {
             $("#msg6").html(data);
         })
     })
-    $("#js-form6").on('submit', function (e) {
+    $("#js-form6").on('update', function (e) {
         e.preventDefault();
         var params = $("#js-form6").serializeArray();
         $.get('/updatewhitelist', params).done(function(data) {
