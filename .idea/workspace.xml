@@ -25,9 +25,11 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="399">
-              <caret line="145" column="54" lean-forward="true" selection-start-line="145" selection-start-column="54" selection-end-line="145" selection-end-column="54" />
-              <folding />
+            <state relative-caret-position="228">
+              <caret line="118" column="0" lean-forward="false" selection-start-line="118" selection-start-column="0" selection-end-line="118" selection-end-column="0" />
+              <folding>
+                <element signature="e#4224#4230#0#HTML" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -386,13 +388,6 @@
       <option name="presentableId" value="Default" />
       <updated>1505633200199</updated>
     </task>
-    <task id="LOCAL-00047" summary="去掉冗余代码">
-      <created>1506419580190</created>
-      <option name="number" value="00047" />
-      <option name="presentableId" value="LOCAL-00047" />
-      <option name="project" value="LOCAL" />
-      <updated>1506419580190</updated>
-    </task>
     <task id="LOCAL-00048" summary="白名单">
       <created>1506420431893</created>
       <option name="number" value="00048" />
@@ -729,7 +724,14 @@
       <option name="project" value="LOCAL" />
       <updated>1507630392451</updated>
     </task>
-    <option name="localTasksCounter" value="96" />
+    <task id="LOCAL-00096" summary="样式">
+      <created>1507631690151</created>
+      <option name="number" value="00096" />
+      <option name="presentableId" value="LOCAL-00096" />
+      <option name="project" value="LOCAL" />
+      <updated>1507631690152</updated>
+    </task>
+    <option name="localTasksCounter" value="97" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -794,7 +796,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2470">
           <caret line="130" column="21" lean-forward="false" selection-start-line="130" selection-start-column="21" selection-end-line="130" selection-end-column="21" />
-          <folding />
+          <folding>
+            <element signature="e#4224#4230#0#HTML" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1072,9 +1076,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="145" column="54" lean-forward="true" selection-start-line="145" selection-start-column="54" selection-end-line="145" selection-end-column="54" />
-          <folding />
+        <state relative-caret-position="228">
+          <caret line="118" column="0" lean-forward="false" selection-start-line="118" selection-start-column="0" selection-end-line="118" selection-end-column="0" />
+          <folding>
+            <element signature="e#4224#4230#0#HTML" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
