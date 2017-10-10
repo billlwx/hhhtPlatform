@@ -48,11 +48,11 @@
         <entry file="file://$PROJECT_DIR$/apo/whitelist.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="285">
-              <caret line="15" column="25" lean-forward="true" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="25" />
+              <caret line="15" column="20" lean-forward="false" selection-start-line="15" selection-start-column="20" selection-end-line="15" selection-end-column="20" />
               <folding>
                 <element signature="e#0#27#0" expanded="true" />
-                <marker date="1507626577879" expanded="true" signature="478:546" ph="UPDATE white... " />
-                <marker date="1507626577879" expanded="true" signature="827:879" ph="select * fro... white_list_member" />
+                <marker date="1507626645819" expanded="true" signature="478:546" ph="UPDATE white... " />
+                <marker date="1507626645819" expanded="true" signature="848:900" ph="select * fro... white_list_member" />
               </folding>
             </state>
           </provider>
@@ -385,13 +385,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1505633200199</updated>
-    </task>
-    <task id="LOCAL-00037" summary="白名单">
-      <created>1506415841255</created>
-      <option name="number" value="00037" />
-      <option name="presentableId" value="LOCAL-00037" />
-      <option name="project" value="LOCAL" />
-      <updated>1506415841255</updated>
     </task>
     <task id="LOCAL-00038" summary="白名单">
       <created>1506416048483</created>
@@ -729,7 +722,14 @@
       <option name="project" value="LOCAL" />
       <updated>1507626389202</updated>
     </task>
-    <option name="localTasksCounter" value="86" />
+    <task id="LOCAL-00086" summary="白名单">
+      <created>1507626582723</created>
+      <option name="number" value="00086" />
+      <option name="presentableId" value="LOCAL-00086" />
+      <option name="project" value="LOCAL" />
+      <updated>1507626582723</updated>
+    </task>
+    <option name="localTasksCounter" value="87" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -813,8 +813,8 @@
           <caret line="3" column="19" lean-forward="false" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="19" />
           <folding>
             <element signature="e#0#27#0" expanded="true" />
-            <marker date="1507626577879" expanded="true" signature="478:546" ph="UPDATE white... " />
-            <marker date="1507626577879" expanded="true" signature="827:879" ph="select * fro... white_list_member" />
+            <marker date="1507626645819" expanded="true" signature="478:546" ph="UPDATE white... " />
+            <marker date="1507626645819" expanded="true" signature="848:900" ph="select * fro... white_list_member" />
           </folding>
         </state>
       </provider>
@@ -1068,11 +1068,11 @@
     <entry file="file://$PROJECT_DIR$/apo/whitelist.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
-          <caret line="15" column="25" lean-forward="true" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="25" />
+          <caret line="15" column="20" lean-forward="false" selection-start-line="15" selection-start-column="20" selection-end-line="15" selection-end-column="20" />
           <folding>
             <element signature="e#0#27#0" expanded="true" />
-            <marker date="1507626577879" expanded="true" signature="478:546" ph="UPDATE white... " />
-            <marker date="1507626577879" expanded="true" signature="827:879" ph="select * fro... white_list_member" />
+            <marker date="1507626645819" expanded="true" signature="478:546" ph="UPDATE white... " />
+            <marker date="1507626645819" expanded="true" signature="848:900" ph="select * fro... white_list_member" />
           </folding>
         </state>
       </provider>

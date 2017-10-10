@@ -13,6 +13,7 @@ def updatewhitelist(request):
         db = DB('119.23.218.196', 33066, 'admin', 'admin#ROOT@ha', 'miloan')
         str = ','.join(whiteMember)
         update = "UPDATE white_list_member set screen_keys = '%s' where user_id = '%s'" % (str,UID)
+        print update
         db.update(update)
         return HttpResponse({'succes'})
     return HttpResponse({'false'})
