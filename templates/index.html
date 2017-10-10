@@ -142,9 +142,7 @@
     })
     $("#js-form7").on('submit', function (e) {
         e.preventDefault();
-
         var params = $("#js-form7").serializeArray();
-
         $.get('/updatewhitelist', params).done(function(data) {
             $("#msg6").html(data);
         })
