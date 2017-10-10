@@ -144,7 +144,7 @@
         e.preventDefault();
         var updateuid = $("#js-form6").serializeArray();
         var params = $("#js-form7").serializeArray();
-        $.get('/updatewhitelist', {a:params,b:updateuid}).done(function(data) {
+        $.get('/updatewhitelist', (params,updateuid)).done(function(data) {
             $("#msg6").html(data);
         })
     })
