@@ -1,10 +1,11 @@
 from MysqldbHelper import *
 from django.http import HttpResponse
 import redis
+from zidian import *
 
 def deleteUserInfo(request):
     mobile = request.GET['uid']
-    db = DB('119.23.218.196', 33066, 'admin', 'admin#ROOT@ha', 'miloan')
+    db = DB(**cgg_test_db)
     list = ['user_contact', 'user_contact_archive', 'user_employment', 'user_employment_archive',
             'user_employment_status', 'user_identity', 'user_identity_archive', 'user_identity_face',
             'user_identity_face_archive', 'user_identity_face_status', 'user_key_contact', 'user_operator',
@@ -22,7 +23,7 @@ def deleteUserInfo(request):
 
 def modifyUserInfo(request):
     UID = request.GET['modifyUserUid']
-    db = DB('119.23.218.196', 33066, 'admin', 'admin#ROOT@ha', 'miloan')
+    db = DB(**cgg_test_db)
     updatecase = "UPDATE miloan.case set case_status = 'rejected' where user_id = '%s' ORDER BY id desc  limit 1" % (UID)
     updatecontr = "UPDATE miloan.contract set status = 'REPAY_SUC'  where uid = '%s' ORDER BY id desc  limit 1" % (UID)
     db.update(updatecase)

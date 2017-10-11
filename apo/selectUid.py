@@ -4,7 +4,6 @@ from zidian import *
 
 def selectUid(request):
     mobile = request.GET['mobile']
-    # db = DB('119.23.218.196', 33066, 'admin', 'admin#ROOT@ha', 'miloan')
     db = DB(**cgg_test_db)
     sql = "select * from user where mobile like '%%%%%s%%%%'" % (mobile)
     fc = db.query(sql)
