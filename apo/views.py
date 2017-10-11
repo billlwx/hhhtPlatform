@@ -10,7 +10,7 @@ from MysqldbHelper import *
 
 def index(request):
 
-    return render_to_response('index.html')
+    return render_to_response('tools.html')
 
 
 
