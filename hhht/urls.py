@@ -22,6 +22,7 @@ from apo import selectUid,deleteUserInfo,mcflush,whitelist
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^index/$',views.index),
+    url(r'^tools/$', views.tools),
     url(r'^selectUid/$', selectUid.selectUid),
     url(r'^deleteUserInfo/$', deleteUserInfo.deleteUserInfo),
     url(r'^delete_auth/$', deleteUserInfo.delete_auth),
