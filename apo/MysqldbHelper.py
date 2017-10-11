@@ -8,7 +8,7 @@
 from django.http import HttpResponse
 
 
-db = DB('119.23.218.196', 33066, 'admin', 'admin#ROOT@ha', 'miloan')
+# db = DB('119.23.218.196', 33066, 'admin', 'admin#ROOT@ha', 'miloan')
 import MySQLdb
 
 
