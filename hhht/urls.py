@@ -35,8 +35,6 @@ urlpatterns = [
     url(r'^mcflush/$', mcflush.mcflush),
     url(r'^selectwhitelist/$', whitelist.selectwhitelist),
     url(r'^updatewhitelist/$', whitelist.updatewhitelist),
-    url(r'^static/*$', 'django.views.static.serve', {'document_root': settings.STATIC_ROOT}),
-
 ]
 
 urlpatterns += staticfiles_urlpatterns()
