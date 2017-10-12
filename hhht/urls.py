@@ -19,6 +19,8 @@ from apo import views
 from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 from django.contrib import staticfiles
 from apo import selectUid,deleteUserInfo,mcflush,whitelist
+import settings
+
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^index/$',views.index),
@@ -30,6 +32,7 @@ urlpatterns = [
     url(r'^mcflush/$', mcflush.mcflush),
     url(r'^selectwhitelist/$', whitelist.selectwhitelist),
     url(r'^updatewhitelist/$', whitelist.updatewhitelist),
+    url(r'^static/(?P<path>.*)$', 'django.views.static.serve', {'document_root': settings.STATIC_URL}),
 ]
 
 urlpatterns += staticfiles_urlpatterns()
