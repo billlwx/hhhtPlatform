@@ -23,8 +23,8 @@ import settings
 
 
 
+
 urlpatterns = [
-    '',
     url(r'^admin/', admin.site.urls),
     url(r'^index/$',views.index),
     url(r'^tools/$', views.tools),
@@ -35,7 +35,12 @@ urlpatterns = [
     url(r'^mcflush/$', mcflush.mcflush),
     url(r'^selectwhitelist/$', whitelist.selectwhitelist),
     url(r'^updatewhitelist/$', whitelist.updatewhitelist),
-    url(r'^static/(?P<path>.*)$', 'django.views.static.serve', {'document_root': settings.STATIC_URL,}),
+
 ]
 
-# urlpatterns += staticfiles_urlpatterns()
+urlpatterns += staticfiles_urlpatterns()
+if settings.DEBUG:
+    urlpatterns += staticfiles_urlpatterns('',
+        url(r'^static/(?P<path>.*)$', 'django.views.static.serve', {'document_root': settings.STATIC_URL,}),
+
+)
