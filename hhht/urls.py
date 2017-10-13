@@ -19,16 +19,23 @@ from apo import views
 from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 from django.contrib import staticfiles
 from apo import selectUid,deleteUserInfo,mcflush,whitelist
+import settings
+
+
+
+
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^index/$',views.index),
+    url(r'^tools/$', views.tools),
     url(r'^selectUid/$', selectUid.selectUid),
     url(r'^deleteUserInfo/$', deleteUserInfo.deleteUserInfo),
     url(r'^delete_auth/$', deleteUserInfo.delete_auth),
     url(r'^modifyUserInfo/$', deleteUserInfo.modifyUserInfo),
     url(r'^mcflush/$', mcflush.mcflush),
     url(r'^selectwhitelist/$', whitelist.selectwhitelist),
-    url(r'^updatewhitelist/$', whitelist.updatewhitelist,name='updatewhitelist'),
+    url(r'^updatewhitelist/$', whitelist.updatewhitelist),
 ]
 
 urlpatterns += staticfiles_urlpatterns()
+

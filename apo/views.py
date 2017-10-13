@@ -7,10 +7,13 @@ from django.http import HttpResponse
 from MysqldbHelper import *
 
 # Create your views here.
-
 def index(request):
 
     return render_to_response('index.html')
+
+def tools(request):
+
+    return render_to_response('tools.html')
 
 
 

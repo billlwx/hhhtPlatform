@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>hhhttestqa</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+</head>
+<body>
+<h2>查询Uid</h2>
+
+<form action="/selectUid" method="get" id="js-form1" class="form-inline">
+{#    <input type="text" name="mobile" placeholder="请输入用户手机号">#}
+    <label>请输入用户手机号:</label>
+    <div class="form-group">
+        <input type="text" name="mobile" class="form-control" placeholder="请输入用户手机号" id="mobile">
+    </div>
+
+    <button type="submit" class="btn btn-primary">查询</button>
+</form>
+
+<div id="msg1"></div>
+<script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+
+<script>
+    $("#js-form1").on('submit', function (e) {
+        e.preventDefault();
+        $.get('/selectUid', {mobile: $("#mobile").val()}).done(function(data) {
+            $("#msg1").html(data);
+        })
+    })
+</script>
+<hr />
+<h2>清除认证信息</h2>
+
+<form action="/deleteUserInfo" method="get" id="js-form2" class="form-inline">
+{#    <input type="text" name="mobile" placeholder="请输入用户手机号">#}
+    <label>清除用户认证信息:</label>
+    <div class="form-group">
+        <input type="text" name="uid" class="form-control" placeholder="请输入用户uid" id="uid">
+    </div>
+
+    <button type="submit" class="btn btn-primary">删除</button>
+</form>
+<div id="msg2"></div>
+<script>
+    $("#js-form2").on('submit', function (e) {
+        e.preventDefault();
+        $.get('/deleteUserInfo', {uid: $("#uid").val()}).done(function(data) {
+            $("#msg2").html(data);
+        })
+    })
+</script>
+
+<form action="/delete_auth" method="get" id="js-form3" class="form-inline">
+{#    <input type="text" name="mobile" placeholder="请输入用户手机号">#}
+    <label>清除用户认证信息的redis:</label>
+    <div class="form-group">
+        <input type="text" name="uid" class="form-control" placeholder="请输入用户uid" id="userId">
+    </div>
+
+    <button type="submit" class="btn btn-primary">清除认证redis</button>
+</form>
+<div id="msg3"></div>
+<script>
+    $("#js-form3").on('submit', function (e) {
+        e.preventDefault();
+        $.get('/delete_auth', {userId: $("#userId").val()}).done(function(data) {
+            $("#msg3").html(data);
+        })
+    })
+</script>
+
+<form action="/modifyUserInfo" method="get" id="js-form4" class="form-inline">
+{#    <input type="text" name="mobile" placeholder="请输入用户手机号">#}
+    <label>认证信息改为可编辑</label>
+    <div class="form-group">
+        <input type="text" name="modifyUserUid" class="form-control" placeholder="请输入用户uid" id="modifyUserUid">
+    </div>
+
+    <button type="submit" class="btn btn-primary">认证信息改为可编辑</button>
+</form>
+<div id="msg4"></div>
+<script>
+    $("#js-form4").on('submit', function (e) {
+        e.preventDefault();
+        $.get('/modifyUserInfo', {modifyUserUid: $("#modifyUserUid").val()}).done(function(data) {
+            $("#msg4").html(data);
+        })
+    })
+</script>
+<hr/>
+<h2>刷新mc缓存</h2>
+<form action="/mcflush" method="get" id="js-form5" class="form-inline">
+{#    <input type="text" name="mobile" placeholder="请输入用户手机号">#}
+    <button type="submit" class="btn btn-primary">刷新mc缓存</button>
+</form>
+<div id="msg5"></div>
+<script>
+    $("#js-form5").on('submit', function (e) {
+        e.preventDefault();
+        $.get('/mcflush').done(function(data) {
+            $("#msg5").html(data);
+        })
+    })
+</script>
+<hr/>
+
+
+<h2>查询&添加白名单</h2>
+<form action="/selectwhitelist" method="get" id="js-form6" class="form-inline">
+    <label>请输入用户UID:</label>
+    <div class="form-group">
+        <input type="text" name="whitelistuid" class="form-control" placeholder="请输入用户UID" id="whitelistuid">
+    </div>
+
+    <button type="submit" class="btn btn-primary" name="select">查询</button>&nbsp;
+
+</form>
+
+
+<form action="/updatewhitelist" method="POST" id="js-form7" class="form-inline">
+    <input type="text" name="whitelistuid" class="form-control" placeholder="请输入用户UID" id="whitelistuid">
+    <button type="submit" class="btn btn-primary" naem="update">更新白名单</button>
+    <div class="form-check-input">
+        <input type="checkbox" name="whiteMember" value="product_white"  />产品白名单
+        <input type="checkbox" name="whiteMember" value="pay_refund_suc" />还款成功
+        <input type="checkbox" name="whiteMember" value="pay_refund_failed" />还款失败
+        <input type="checkbox" name="whiteMember" value="pay_loan_suc" />借款成功
+        <input type="checkbox" name="whiteMember" value="pay_loan_failed" />借款失败
+        <input type="checkbox" name="whiteMember" value="renewal_apply" />续期申请
+        <input type="checkbox" name="whiteMember" value="credit_lift" />提额申请
+    </div>
+
+</form>
+
+<div id="msg6"></div>
+<script>
+    $("#js-form6").on('submit', function (e) {
+        e.preventDefault();
+        $.get('/selectwhitelist', {whitelistuid: $("#whitelistuid").val()}).done(function(data) {
+            $("#msg6").html(data);
+        })
+    })
+    $("#js-form7").on('submit', function (e) {
+        e.preventDefault();
+        var member = $("#js-form7").serializeArray();
+        var uid = $("#js-form6").serializeArray();
+        $.get('/updatewhitelist', member).done(function(data) {
+            $("#msg6").html(data);
+        })
+    })
+</script>
+<hr/>
+
+
+
+
+
+
+
+
+
+
+
+<h5>构造逾期数据------待开发</h5>
+<hr/>
+<h5>测试团队常用页面集成------待开发</h5>
+<hr/>
+<h5>mq推送------待开发</h5>
+<hr/>
+<h5>hbase数据操作，包括数据清除------待开发</h5>
+<hr/>
+<h5>测试平台页面权限控制------待开发</h5>
+<hr/>
+<h5>多套环境支持（独立数据库，redis等配置）------待开发</h5>
+<hr/>
+</body>
+
+</html>
