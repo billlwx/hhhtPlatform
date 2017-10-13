@@ -13,7 +13,7 @@ table_adict = {'cp_kv': 'time', 'databank': 'f', 'imei_kv': 'time','ip_imei_kv':
                'lc_100m_kv': 'time', 'lc_1km_imei_kv': 'time','p8_kv': 'time', 'udid_certno_kv': 'f',
                'contact_mobile_kv': 'f', 'np_kv': 'time', 'risk_control_result': 'f', 'imei_phone_kv': 'time'}
 
-def inithbase(request):
+def hbaseclean(request):
     client = HbaseClient()
     i = 0
     for k in table_adict:

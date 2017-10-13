@@ -170,7 +170,20 @@
 <hr/>
 <h5>mq推送------待开发</h5>
 <hr/>
-<h5>hbase数据操作，包括数据清除------待开发</h5>
+<h2>hbase数据操作，包括数据清除</h2>
+<form action="/hbaseclean" method="get" id="js-form16" class="form-inline">
+    <button type="submit" class="btn btn-primary">清楚hbase缓存</button>
+</form>
+<div id="msg5"></div>
+<script>
+    $("#js-form16").on('submit', function (e) {
+        e.preventDefault();
+        $.get('/hbaseclean').done(function(data) {
+            $("#msg16").html(data);
+        })
+    })
+</script>
+<hr/>
 <hr/>
 <h5>测试平台页面权限控制------待开发</h5>
 <hr/>

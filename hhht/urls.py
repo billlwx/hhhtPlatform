@@ -19,6 +19,7 @@ from apo import views
 from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 from django.contrib import staticfiles
 from apo import selectUid,deleteUserInfo,mcflush,whitelist
+from myrisktest import hbase_client
 import settings
 
 
@@ -35,6 +36,7 @@ urlpatterns = [
     url(r'^mcflush/$', mcflush.mcflush),
     url(r'^selectwhitelist/$', whitelist.selectwhitelist),
     url(r'^updatewhitelist/$', whitelist.updatewhitelist),
+    url(r'^hbaseclean/$', hbase_client.hbaseclean),
 ]
 
 urlpatterns += staticfiles_urlpatterns()
