@@ -411,20 +411,6 @@
       <option name="presentableId" value="Default" />
       <updated>1505633200199</updated>
     </task>
-    <task id="LOCAL-00024" summary="redis">
-      <created>1506165901663</created>
-      <option name="number" value="00024" />
-      <option name="presentableId" value="LOCAL-00024" />
-      <option name="project" value="LOCAL" />
-      <updated>1506165901663</updated>
-    </task>
-    <task id="LOCAL-00025" summary="redis">
-      <created>1506166023705</created>
-      <option name="number" value="00025" />
-      <option name="presentableId" value="LOCAL-00025" />
-      <option name="project" value="LOCAL" />
-      <updated>1506166023705</updated>
-    </task>
     <task id="LOCAL-00026" summary="redis">
       <created>1506309001076</created>
       <option name="number" value="00026" />
@@ -754,7 +740,21 @@
       <option name="project" value="LOCAL" />
       <updated>1507866561439</updated>
     </task>
-    <option name="localTasksCounter" value="73" />
+    <task id="LOCAL-00073" summary="风控测试">
+      <created>1507866606502</created>
+      <option name="number" value="00073" />
+      <option name="presentableId" value="LOCAL-00073" />
+      <option name="project" value="LOCAL" />
+      <updated>1507866606502</updated>
+    </task>
+    <task id="LOCAL-00074" summary="风控测试">
+      <created>1507866636714</created>
+      <option name="number" value="00074" />
+      <option name="presentableId" value="LOCAL-00074" />
+      <option name="project" value="LOCAL" />
+      <updated>1507866636714</updated>
+    </task>
+    <option name="localTasksCounter" value="75" />
     <servers />
   </component>
   <component name="ToolWindowManager">
