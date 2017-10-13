@@ -288,3 +288,11 @@ html[dir=rtl] #attribution,
 #one-google.hidden {
   opacity: 0;
 }
+
+#iframe {
+  position: fixed;
+  margin:auto;
+  left:0;
+  right:0;
+  border: none;
+}
