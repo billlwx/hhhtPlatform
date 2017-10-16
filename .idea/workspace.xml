@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5ceede38-904b-4e94-a262-26cf0c7b7444" name="Default" comment="url">
+    <list default="true" id="5ceede38-904b-4e94-a262-26cf0c7b7444" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/js/local-ntp.js" afterPath="$PROJECT_DIR$/static/js/local-ntp.js" />
     </list>
@@ -58,8 +58,8 @@
       <file leaf-file-name="local-ntp.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/static/js/local-ntp.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="283">
-              <caret line="567" column="61" lean-forward="true" selection-start-line="567" selection-start-column="61" selection-end-line="567" selection-end-column="61" />
+            <state relative-caret-position="207">
+              <caret line="563" column="0" lean-forward="false" selection-start-line="563" selection-start-column="0" selection-end-line="563" selection-end-column="51" />
               <folding />
             </state>
           </provider>
@@ -555,13 +555,6 @@
       <option name="presentableId" value="Default" />
       <updated>1505633200199</updated>
     </task>
-    <task id="LOCAL-00093" summary="样式">
-      <created>1507629630173</created>
-      <option name="number" value="00093" />
-      <option name="presentableId" value="LOCAL-00093" />
-      <option name="project" value="LOCAL" />
-      <updated>1507629630173</updated>
-    </task>
     <task id="LOCAL-00094" summary="样式">
       <created>1507629828914</created>
       <option name="number" value="00094" />
@@ -898,7 +891,14 @@
       <option name="project" value="LOCAL" />
       <updated>1508143366297</updated>
     </task>
-    <option name="localTasksCounter" value="142" />
+    <task id="LOCAL-00142" summary="url">
+      <created>1508143656795</created>
+      <option name="number" value="00142" />
+      <option name="presentableId" value="LOCAL-00142" />
+      <option name="project" value="LOCAL" />
+      <updated>1508143656795</updated>
+    </task>
+    <option name="localTasksCounter" value="143" />
     <servers />
   </component>
   <component name="TodoView">
@@ -1281,8 +1281,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/static/js/local-ntp.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="283">
-          <caret line="567" column="61" lean-forward="true" selection-start-line="567" selection-start-column="61" selection-end-line="567" selection-end-column="61" />
+        <state relative-caret-position="207">
+          <caret line="563" column="0" lean-forward="false" selection-start-line="563" selection-start-column="0" selection-end-line="563" selection-end-column="51" />
           <folding />
         </state>
       </provider>

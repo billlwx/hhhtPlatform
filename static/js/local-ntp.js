@@ -561,7 +561,7 @@ function init() {
 
   var embeddedSearchApiHandle = window.chrome.embeddedSearch;
 
-  ntpApiHandle = embeddedSearchApiHandle.open();
+  // ntpApiHandle = embeddedSearchApiHandle.open();
   ntpApiHandle.onthemechange = onThemeChange;
   ntpApiHandle.onmostvisitedchange = onMostVisitedChange;
 
