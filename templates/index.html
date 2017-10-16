@@ -1,36 +1,106 @@
-<!doctype html>
 <html>
-<!-- Copyright 2015 The Chromium Authors. All rights reserved.
-     Use of this source code is governed by a BSD-style license that can be
-     found in the LICENSE file. -->
 <head>
     {% load staticfiles %}
-  <link rel="stylesheet" href="/static/css/theme.css"></link>
-  <link rel="stylesheet" href="/static/css/local-ntp.css"></link>
-  <script src="/static/js/local-ntp.js"></script>
+  <link rel="stylesheet" href="/static/css/theme.css">
+  <link rel="stylesheet" href="/static/css/local-ntp.css">
+  <script src="/static/js/config.js" integrity="sha256-dMHkXrERJl49VquUHZxxjkCcvmyJNmQuqJTyKcujcqg="></script>
+  <script src="/static/js/local-ntp.js" integrity="sha256-oanxTzX/RXfa+kIkL13DxrG8++qEMBE2mSO8yDRUKcw="></script>
   <meta charset="utf-8">
   <meta name="google" value="notranslate">
-    <title>hhhttestqa</title>
 </head>
-
-<body>
-<div id="iframe" style="margin: auto">
-<iframe src="http://119.23.218.196:4321/tools/" >
-      <div id="most-visited">
-          <div id="mv-tiles" style="opacity: 1;">
-             <a class="mv-tile" data-tid="9" href="http://119.23.218.196:4321/tools/" aria-label="测试平台" title="测试平台testqa">
-                <div class="mv-title" style="direction: ltr;">测试平台</div>
-                <div class="mv-thumb"><img title="testqa" src="/static/images/logo.png"></div>
-             </a>
-             <a class="mv-tile" data-tid="10" href="http://tools-git.188w.com/" aria-label="Projects · Dashboard · GitLab" title="Projects · Dashboard · GitLab">
-                <div class="mv-title" style="direction: ltr;">Projects · Dashboard · GitLab</div>
-                <div class="mv-thumb"><img title="Projects · Dashboard · GitLab" src="/static/images/logo.png"></div>
-           </a>
-          </div>
+<body class="non-google-page" style="background: rgb(255, 255, 255);">
+  <div id="one-google" class="hidden"></div>
+  <div id="ntp-contents" class="default-theme">
+    <div id="logo" title="Google"></div>
+    <div id="fakebox" style="width: 493px;">
+      <div id="fakebox-text"></div>
+      <input id="fakebox-input" autocomplete="off" tabindex="-1" type="url" aria-hidden="true">
+      <div id="cursor"></div>
+    </div>
+    <div id="most-visited">
+      <!-- The container for the tiles. The MV iframe goes in here. -->
+      <div id="mv-tiles" style="width: 511px;">
+          <iframe id="mv-single" tabindex="1" src="single.html">
+              <html>
+              <head>
+                  <base target="_top">
+                  <meta charset="utf-8">
+                  <link rel="stylesheet" type="text/css" href="single.css">
+                  <style type="text/css" id="custom-theme">body { color: rgba(50,50,50,1); }</style>
+                  <script src="single.js"></script>
+              </head>
+              <body>
+              <div id="most-visited">
+                  <div id="mv-tiles" style="opacity: 1;">
+                      <a class="mv-tile" data-tid="1" href="http://tools-jenkins.188w.com/" aria-label="Dashboard [Jenkins]" title="Dashboard [Jenkins]">
+                          <div class="mv-favicon"><img src="chrome-search://favicon/size/16@1x/2/1" title=""></div>
+                          <div class="mv-title" style="direction: ltr;">Dashboard [Jenkins]</div>
+                          <div class="mv-thumb"><img title="Dashboard [Jenkins]" src="chrome-search://thumb/2/1"></div>
+                          <div class="mv-x" role="button" title="不要在本页上显示"></div>
+                      </a>
+                      <a class="mv-tile" data-tid="2" href="http://tools-git.188w.com/" aria-label="Projects · Dashboard · GitLab" title="Projects · Dashboard · GitLab">
+                          <div class="mv-favicon"><img src="chrome-search://favicon/size/16@1x/2/2" title=""></div>
+                          <div class="mv-title" style="direction: ltr;">Projects · Dashboard · GitLab</div>
+                          <div class="mv-thumb"><img title="Projects · Dashboard · GitLab" src="chrome-search://thumb/2/2"></div>
+                          <div class="mv-x" role="button" title="不要在本页上显示"></div>
+                      </a>
+                      <a class="mv-tile" data-tid="3" href="http://tools-wiki.188w.com/pages/viewpage.action?pageId=1476443" aria-label="2.测试文档 - 浩瀚汇通 - 浩瀚汇通WIKI" title="2.测试文档 - 浩瀚汇通 - 浩瀚汇通WIKI">
+                          <div class="mv-favicon"><img src="chrome-search://favicon/size/16@1x/2/3" title=""></div>
+                          <div class="mv-title" style="direction: ltr;">2.测试文档 - 浩瀚汇通 - 浩瀚汇通WIKI</div>
+                          <div class="mv-thumb"><img title="2.测试文档 - 浩瀚汇通 - 浩瀚汇通WIKI" src="chrome-search://thumb/2/3"></div>
+                          <div class="mv-x" role="button" title="不要在本页上显示"></div>
+                      </a>
+                      <a class="mv-tile" data-tid="4" href="http://192.168.2.185:8080/jenkins/" aria-label="Dashboard [Jenkins]" title="Dashboard [Jenkins]">
+                          <div class="mv-favicon"><img src="chrome-search://favicon/size/16@1x/2/4" title=""></div>
+                          <div class="mv-title" style="direction: ltr;">Dashboard [Jenkins]</div>
+                          <div class="mv-thumb"><img title="Dashboard [Jenkins]" src="chrome-search://thumb/2/4"></div>
+                          <div class="mv-x" role="button" title="不要在本页上显示"></div>
+                      </a>
+                      <a class="mv-tile hidden" data-tid="5" href="http://tools-jira.188w.com/secure/Dashboard.jspa" aria-label="System Dashboard - HHHT JIRA" title="System Dashboard - HHHT JIRA">
+                          <div class="mv-favicon"><img src="chrome-search://favicon/size/16@1x/2/5" title=""></div>
+                          <div class="mv-title" style="direction: ltr;">System Dashboard - HHHT JIRA</div>
+                          <div class="mv-thumb"><img title="System Dashboard - HHHT JIRA" src="chrome-search://thumb/2/5"></div>
+                          <div class="mv-x" role="button" title="不要在本页上显示"></div>
+                      </a>
+                      <a class="mv-tile hidden" data-tid="6" href="http://119.23.218.196:7081/admin/#/" aria-label="财滚滚风控管理平台" title="财滚滚风控管理平台">
+                          <div class="mv-favicon"><img src="chrome-search://favicon/size/16@1x/2/6" title=""></div>
+                          <div class="mv-title" style="direction: ltr;">财滚滚风控管理平台</div>
+                          <div class="mv-thumb"><img title="财滚滚风控管理平台" src="chrome-search://thumb/2/6"></div>
+                          <div class="mv-x" role="button" title="不要在本页上显示"></div>
+                      </a>
+                      <a class="mv-tile hidden" data-tid="7" href="https://admin.188w.com/#/jinjian/" aria-label="财滚滚风控管理平台" title="财滚滚风控管理平台">
+                          <div class="mv-favicon"><img src="chrome-search://favicon/size/16@1x/2/7" title=""></div>
+                          <div class="mv-title" style="direction: ltr;">财滚滚风控管理平台</div>
+                          <div class="mv-thumb"><img title="财滚滚风控管理平台" src="chrome-search://thumb/2/7"></div>
+                          <div class="mv-x" role="button" title="不要在本页上显示"></div>
+                      </a>
+                      <a class="mv-tile hidden" data-tid="8" href="http://120.77.46.252:7081/admin/#/" aria-label="120.77.46.252" title="120.77.46.252">
+                          <div class="mv-favicon"><img src="chrome-search://favicon/size/16@1x/2/8" title=""></div>
+                          <div class="mv-title" style="direction: ltr;">120.77.46.252</div>
+                          <div class="mv-thumb"><img title="120.77.46.252" src="chrome-search://thumb/2/8"></div>
+                          <div class="mv-x" role="button" title="不要在本页上显示"></div>
+                      </a>
+                  </div>
+              </div>
+              </body>
+              </html>
+          </iframe>
       </div>
+      <!-- Notification shown when a tile is blacklisted. -->
+      <div id="mv-notice" class="mv-notice-hide">
+        <span id="mv-msg">已删除缩略图。</span>
+        <!-- Links in the notification. -->
+        <span id="mv-notice-links">
+          <span id="mv-undo" tabindex="1">撤消</span>
+          <span id="mv-restore" tabindex="1">全部恢复</span>
+          <div id="mv-notice-x" tabindex="1"></div>
+        </span>
+      </div>
+    </div>
+    <div id="attribution" style="display: none;"><div id="attribution-text">主题背景创建者：</div></div>
+  </div>
 
-</iframe>
-</div>
-</body>
+  <div id="one-google-end-of-body"></div>
 
-</html>
+
+</body></html>
