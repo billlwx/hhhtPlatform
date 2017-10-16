@@ -29,8 +29,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="394">
-              <caret line="126" column="68" lean-forward="true" selection-start-line="126" selection-start-column="68" selection-end-line="126" selection-end-column="68" />
+            <state relative-caret-position="399">
+              <caret line="120" column="44" lean-forward="false" selection-start-line="120" selection-start-column="44" selection-end-line="120" selection-end-column="44" />
               <folding />
             </state>
           </provider>
@@ -167,7 +167,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="292" />
+    <option name="x" value="237" />
+    <option name="y" value="22" />
     <option name="width" value="1732" />
     <option name="height" value="1057" />
   </component>
@@ -545,13 +546,6 @@
       <option name="presentableId" value="Default" />
       <updated>1505633200199</updated>
     </task>
-    <task id="LOCAL-00106" summary="样式">
-      <created>1507712675138</created>
-      <option name="number" value="00106" />
-      <option name="presentableId" value="LOCAL-00106" />
-      <option name="project" value="LOCAL" />
-      <updated>1507712675139</updated>
-    </task>
     <task id="LOCAL-00107" summary="样式">
       <created>1507712715731</created>
       <option name="number" value="00107" />
@@ -888,7 +882,14 @@
       <option name="project" value="LOCAL" />
       <updated>1508146707794</updated>
     </task>
-    <option name="localTasksCounter" value="155" />
+    <task id="LOCAL-00155" summary="样式">
+      <created>1508147327920</created>
+      <option name="number" value="00155" />
+      <option name="presentableId" value="LOCAL-00155" />
+      <option name="project" value="LOCAL" />
+      <updated>1508147327920</updated>
+    </task>
+    <option name="localTasksCounter" value="156" />
     <servers />
   </component>
   <component name="TodoView">
@@ -901,7 +902,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="292" y="0" width="1732" height="1057" extended-state="0" />
+    <frame x="237" y="22" width="1732" height="1057" extended-state="0" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32805756" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
@@ -1314,8 +1315,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="394">
-          <caret line="126" column="68" lean-forward="true" selection-start-line="126" selection-start-column="68" selection-end-line="126" selection-end-column="68" />
+        <state relative-caret-position="399">
+          <caret line="120" column="44" lean-forward="false" selection-start-line="120" selection-start-column="44" selection-end-line="120" selection-end-column="44" />
           <folding />
         </state>
       </provider>
