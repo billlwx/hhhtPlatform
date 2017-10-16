@@ -15,6 +15,10 @@ def tools(request):
 
     return render_to_response('tools.html')
 
+def single(request):
+
+    return render_to_response('single.html')
+
 
 
 
