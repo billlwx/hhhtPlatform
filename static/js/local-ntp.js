@@ -653,7 +653,7 @@ function init() {
   var iframe = document.createElement('iframe');
   iframe.id = IDS.TILES_IFRAME;
   iframe.tabIndex = 1;
-  iframe.src = 'chrome-search://most-visited/single.html?' + args.join('&');
+  iframe.src = 'single.html?' + args.join('&');
   $(IDS.TILES).appendChild(iframe);
 
   iframe.onload = function() {
