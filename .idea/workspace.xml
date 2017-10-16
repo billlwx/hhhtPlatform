@@ -103,7 +103,7 @@
         <entry file="file://$PROJECT_DIR$/hhht/urls.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="266">
-              <caret line="30" column="0" lean-forward="false" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+              <caret line="30" column="0" lean-forward="false" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="46" />
               <folding />
             </state>
           </provider>
@@ -562,13 +562,6 @@
       <option name="presentableId" value="Default" />
       <updated>1505633200199</updated>
     </task>
-    <task id="LOCAL-00086" summary="白名单">
-      <created>1507626582723</created>
-      <option name="number" value="00086" />
-      <option name="presentableId" value="LOCAL-00086" />
-      <option name="project" value="LOCAL" />
-      <updated>1507626582723</updated>
-    </task>
     <task id="LOCAL-00087" summary="白名单">
       <created>1507626650788</created>
       <option name="number" value="00087" />
@@ -905,7 +898,14 @@
       <option name="project" value="LOCAL" />
       <updated>1508140497282</updated>
     </task>
-    <option name="localTasksCounter" value="135" />
+    <task id="LOCAL-00135" summary="url">
+      <created>1508140618912</created>
+      <option name="number" value="00135" />
+      <option name="presentableId" value="LOCAL-00135" />
+      <option name="project" value="LOCAL" />
+      <updated>1508140618912</updated>
+    </task>
+    <option name="localTasksCounter" value="136" />
     <servers />
   </component>
   <component name="TodoView">
@@ -1007,7 +1007,8 @@
     <MESSAGE value="Merge remote-tracking branch 'origin/master' into risktest&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml" />
     <MESSAGE value="按钮时间限制" />
     <MESSAGE value="风控测试" />
-    <option name="LAST_COMMIT_MESSAGE" value="风控测试" />
+    <MESSAGE value="url" />
+    <option name="LAST_COMMIT_MESSAGE" value="url" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1279,7 +1280,7 @@
     <entry file="file://$PROJECT_DIR$/hhht/urls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="266">
-          <caret line="30" column="0" lean-forward="false" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+          <caret line="30" column="0" lean-forward="false" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="46" />
           <folding />
         </state>
       </provider>
