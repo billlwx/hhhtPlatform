@@ -565,7 +565,7 @@ function init() {
   // ntpApiHandle.onthemechange = onThemeChange;
   // ntpApiHandle.onmostvisitedchange = onMostVisitedChange;
 
-  var searchboxApiHandle = embeddedSearchApiHandle.searchBox;
+  // var searchboxApiHandle = embeddedSearchApiHandle.searchBox;
 
   // if (configData.isGooglePage) {
   //   // Set up the fakebox (which only exists on the Google NTP).
@@ -641,8 +641,8 @@ function init() {
   // Collect arguments for the most visited iframe.
   var args = [];
 
-  if (searchboxApiHandle.rtl)
-    args.push('rtl=1');
+  // if (searchboxApiHandle.rtl)
+  //   args.push('rtl=1');
   if (NTP_DESIGN.numTitleLines > 1)
     args.push('ntl=' + NTP_DESIGN.numTitleLines);
 
