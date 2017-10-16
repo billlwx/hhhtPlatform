@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="5ceede38-904b-4e94-a262-26cf0c7b7444" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/index.html" afterPath="$PROJECT_DIR$/templates/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static/js/local-ntp.js" afterPath="$PROJECT_DIR$/static/js/local-ntp.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -25,7 +25,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/index.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="95">
@@ -55,11 +55,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="local-ntp.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="local-ntp.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/static/js/local-ntp.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="302">
-              <caret line="559" column="23" lean-forward="true" selection-start-line="559" selection-start-column="23" selection-end-line="559" selection-end-column="23" />
+            <state relative-caret-position="-779">
+              <caret line="632" column="24" lean-forward="false" selection-start-line="632" selection-start-column="6" selection-end-line="632" selection-end-column="24" />
               <folding />
             </state>
           </provider>
@@ -186,8 +186,8 @@
         <option value="$PROJECT_DIR$/apo/views.py" />
         <option value="$PROJECT_DIR$/hhht/urls.py" />
         <option value="$PROJECT_DIR$/templates/single.html" />
-        <option value="$PROJECT_DIR$/static/js/local-ntp.js" />
         <option value="$PROJECT_DIR$/templates/index.html" />
+        <option value="$PROJECT_DIR$/static/js/local-ntp.js" />
       </list>
     </option>
   </component>
@@ -556,13 +556,6 @@
       <option name="presentableId" value="Default" />
       <updated>1505633200199</updated>
     </task>
-    <task id="LOCAL-00095" summary="样式">
-      <created>1507630392451</created>
-      <option name="number" value="00095" />
-      <option name="presentableId" value="LOCAL-00095" />
-      <option name="project" value="LOCAL" />
-      <updated>1507630392451</updated>
-    </task>
     <task id="LOCAL-00096" summary="样式">
       <created>1507631690151</created>
       <option name="number" value="00096" />
@@ -899,7 +892,14 @@
       <option name="project" value="LOCAL" />
       <updated>1508143807249</updated>
     </task>
-    <option name="localTasksCounter" value="144" />
+    <task id="LOCAL-00144" summary="url">
+      <created>1508143922335</created>
+      <option name="number" value="00144" />
+      <option name="presentableId" value="LOCAL-00144" />
+      <option name="project" value="LOCAL" />
+      <updated>1508143922335</updated>
+    </task>
+    <option name="localTasksCounter" value="145" />
     <servers />
   </component>
   <component name="TodoView">
@@ -1264,14 +1264,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/js/local-ntp.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="302">
-          <caret line="559" column="23" lean-forward="true" selection-start-line="559" selection-start-column="23" selection-end-line="559" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/single.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
@@ -1284,6 +1276,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="95">
           <caret line="5" column="36" lean-forward="false" selection-start-line="5" selection-start-column="36" selection-end-line="5" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/js/local-ntp.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-779">
+          <caret line="632" column="24" lean-forward="false" selection-start-line="632" selection-start-column="6" selection-end-line="632" selection-end-column="24" />
           <folding />
         </state>
       </provider>
