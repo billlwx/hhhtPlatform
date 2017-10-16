@@ -630,13 +630,13 @@ function init() {
   //   document.body.classList.add(CLASSES.NON_GOOGLE_PAGE);
   // }
 
-  if (searchboxApiHandle.rtl) {
-    $(IDS.NOTIFICATION).dir = 'rtl';
-    // Grabbing the root HTML element.
-    document.documentElement.setAttribute('dir', 'rtl');
-    // Add class for setting alignments based on language directionality.
-    document.documentElement.classList.add(CLASSES.RTL);
-  }
+  // if (searchboxApiHandle.rtl) {
+  //   $(IDS.NOTIFICATION).dir = 'rtl';
+  //   // Grabbing the root HTML element.
+  //   document.documentElement.setAttribute('dir', 'rtl');
+  //   // Add class for setting alignments based on language directionality.
+  //   document.documentElement.classList.add(CLASSES.RTL);
+  // }
 
   // Collect arguments for the most visited iframe.
   var args = [];
