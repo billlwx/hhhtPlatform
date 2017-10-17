@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5ceede38-904b-4e94-a262-26cf0c7b7444" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myrisktest/producer_client.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hhht/urls.py" afterPath="$PROJECT_DIR$/hhht/urls.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/tools.html" afterPath="$PROJECT_DIR$/templates/tools.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/myrisktest/myProducer.py" afterPath="$PROJECT_DIR$/myrisktest/my_producer.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -508,13 +506,6 @@
       <option name="presentableId" value="Default" />
       <updated>1505633200199</updated>
     </task>
-    <task id="LOCAL-00087" summary="白名单">
-      <created>1507626650788</created>
-      <option name="number" value="00087" />
-      <option name="presentableId" value="LOCAL-00087" />
-      <option name="project" value="LOCAL" />
-      <updated>1507626650788</updated>
-    </task>
     <task id="LOCAL-00088" summary="白名单">
       <created>1507626950200</created>
       <option name="number" value="00088" />
@@ -851,7 +842,14 @@
       <option name="project" value="LOCAL" />
       <updated>1508211183765</updated>
     </task>
-    <option name="localTasksCounter" value="136" />
+    <task id="LOCAL-00136" summary="更新">
+      <created>1508225303564</created>
+      <option name="number" value="00136" />
+      <option name="presentableId" value="LOCAL-00136" />
+      <option name="project" value="LOCAL" />
+      <updated>1508225303564</updated>
+    </task>
+    <option name="localTasksCounter" value="137" />
     <servers />
   </component>
   <component name="TodoView">
