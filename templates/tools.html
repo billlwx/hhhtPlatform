@@ -168,8 +168,24 @@
 <hr/>
 <h5>测试团队常用页面集成------待开发</h5>
 <hr/>
-<h5>mq推送------待开发</h5>
+
+<h2>mq推送</h2>
+<form action="/sendriskmq" method="get" id="js-form15" class="form-inline">
+    <button type="submit" class="btn btn-primary" >推送防欺诈MQ</button>
+</form>
+<div id="msg15"></div>
+<script>
+
+    $("#js-form15").on('submit', function (e) {
+        e.preventDefault();
+        $.get('/sendriskmq').done(function(data) {
+            $("#msg15").html(data);
+        });
+    })
+
+</script>
 <hr/>
+
 <h2>hbase数据操作，包括数据清除</h2>
 <form action="/hbaseclean" method="get" id="js-form16" class="form-inline">
     <button type="submit" class="btn btn-primary" id="js-form16-btn">清除hbase缓存</button>
@@ -201,7 +217,6 @@
     }
 
     checkTimer()
-
 
 </script>
 <hr/>
