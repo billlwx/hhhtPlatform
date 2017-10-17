@@ -561,87 +561,88 @@ function init() {
 
   var embeddedSearchApiHandle = window.chrome.embeddedSearch;
 
-  ntpApiHandle = embeddedSearchApiHandle.newTabPage;
-  ntpApiHandle.onthemechange = onThemeChange;
-  ntpApiHandle.onmostvisitedchange = onMostVisitedChange;
+  // ntpApiHandle = embeddedSearchApiHandle.open();
+  // ntpApiHandle.onthemechange = onThemeChange;
+  // ntpApiHandle.onmostvisitedchange = onMostVisitedChange;
 
-  var searchboxApiHandle = embeddedSearchApiHandle.searchBox;
+  // var searchboxApiHandle = embeddedSearchApiHandle.searchBox;
 
-  if (configData.isGooglePage) {
-    // Set up the fakebox (which only exists on the Google NTP).
-    ntpApiHandle.oninputstart = onInputStart;
-    ntpApiHandle.oninputcancel = onInputCancel;
+  // if (configData.isGooglePage) {
+  //   // Set up the fakebox (which only exists on the Google NTP).
+  //   ntpApiHandle.oninputstart = onInputStart;
+  //   ntpApiHandle.oninputcancel = onInputCancel;
+  //
+  //   if (ntpApiHandle.isInputInProgress) {
+  //     onInputStart();
+  //   }
+  //
+  //   $(IDS.FAKEBOX_TEXT).textContent =
+  //       configData.translatedStrings.searchboxPlaceholder;
+  //
+  //   // Listener for updating the key capture state.
+  //   document.body.onmousedown = function(event) {
+  //     if (isFakeboxClick(event))
+  //       searchboxApiHandle.startCapturingKeyStrokes();
+  //     else if (isFakeboxFocused())
+  //       searchboxApiHandle.stopCapturingKeyStrokes();
+  //   };
+  //   searchboxApiHandle.onkeycapturechange = function() {
+  //     setFakeboxFocus(searchboxApiHandle.isKeyCaptureEnabled);
+  //   };
+  //   var inputbox = $(IDS.FAKEBOX_INPUT);
+  //   inputbox.onpaste = function(event) {
+  //     event.preventDefault();
+  //     // Send pasted text to Omnibox.
+  //     var text = event.clipboardData.getData('text/plain');
+  //     if (text)
+  //       searchboxApiHandle.paste(text);
+  //   };
+  //   inputbox.ondrop = function(event) {
+  //     event.preventDefault();
+  //     var text = event.dataTransfer.getData('text/plain');
+  //     if (text) {
+  //       searchboxApiHandle.paste(text);
+  //     }
+  //     setFakeboxDragFocus(false);
+  //   };
+  //   inputbox.ondragenter = function() {
+  //     setFakeboxDragFocus(true);
+  //   };
+  //   inputbox.ondragleave = function() {
+  //     setFakeboxDragFocus(false);
+  //   };
+  //
+  //   // Update the fakebox style to match the current key capturing state.
+  //   setFakeboxFocus(searchboxApiHandle.isKeyCaptureEnabled);
+  //
+  //   // Inject the OneGoogleBar loader script. It'll create a global variable
+  //   // named "og" with the following fields:
+  //   //  .html - the main bar HTML.
+  //   //  .end_of_body_html - HTML to be inserted at the end of the body.
+  //   var ogScript = document.createElement('script');
+  //   ogScript.src = 'chrome-search://local-ntp/one-google.js';
+  //   document.body.appendChild(ogScript);
+  //   ogScript.onload = function() {
+  //     injectOneGoogleBar(og.html, og.end_of_body_html);
+  //   };
+  // }
+  //   else {
+  //   document.body.classList.add(CLASSES.NON_GOOGLE_PAGE);
+  // }
 
-    if (ntpApiHandle.isInputInProgress) {
-      onInputStart();
-    }
-
-    $(IDS.FAKEBOX_TEXT).textContent =
-        configData.translatedStrings.searchboxPlaceholder;
-
-    // Listener for updating the key capture state.
-    document.body.onmousedown = function(event) {
-      if (isFakeboxClick(event))
-        searchboxApiHandle.startCapturingKeyStrokes();
-      else if (isFakeboxFocused())
-        searchboxApiHandle.stopCapturingKeyStrokes();
-    };
-    searchboxApiHandle.onkeycapturechange = function() {
-      setFakeboxFocus(searchboxApiHandle.isKeyCaptureEnabled);
-    };
-    var inputbox = $(IDS.FAKEBOX_INPUT);
-    inputbox.onpaste = function(event) {
-      event.preventDefault();
-      // Send pasted text to Omnibox.
-      var text = event.clipboardData.getData('text/plain');
-      if (text)
-        searchboxApiHandle.paste(text);
-    };
-    inputbox.ondrop = function(event) {
-      event.preventDefault();
-      var text = event.dataTransfer.getData('text/plain');
-      if (text) {
-        searchboxApiHandle.paste(text);
-      }
-      setFakeboxDragFocus(false);
-    };
-    inputbox.ondragenter = function() {
-      setFakeboxDragFocus(true);
-    };
-    inputbox.ondragleave = function() {
-      setFakeboxDragFocus(false);
-    };
-
-    // Update the fakebox style to match the current key capturing state.
-    setFakeboxFocus(searchboxApiHandle.isKeyCaptureEnabled);
-
-    // Inject the OneGoogleBar loader script. It'll create a global variable
-    // named "og" with the following fields:
-    //  .html - the main bar HTML.
-    //  .end_of_body_html - HTML to be inserted at the end of the body.
-    var ogScript = document.createElement('script');
-    ogScript.src = 'chrome-search://local-ntp/one-google.js';
-    document.body.appendChild(ogScript);
-    ogScript.onload = function() {
-      injectOneGoogleBar(og.html, og.end_of_body_html);
-    };
-  } else {
-    document.body.classList.add(CLASSES.NON_GOOGLE_PAGE);
-  }
-
-  if (searchboxApiHandle.rtl) {
-    $(IDS.NOTIFICATION).dir = 'rtl';
-    // Grabbing the root HTML element.
-    document.documentElement.setAttribute('dir', 'rtl');
-    // Add class for setting alignments based on language directionality.
-    document.documentElement.classList.add(CLASSES.RTL);
-  }
+  // if (searchboxApiHandle.rtl) {
+  //   $(IDS.NOTIFICATION).dir = 'rtl';
+  //   // Grabbing the root HTML element.
+  //   document.documentElement.setAttribute('dir', 'rtl');
+  //   // Add class for setting alignments based on language directionality.
+  //   document.documentElement.classList.add(CLASSES.RTL);
+  // }
 
   // Collect arguments for the most visited iframe.
   var args = [];
 
-  if (searchboxApiHandle.rtl)
-    args.push('rtl=1');
+  // if (searchboxApiHandle.rtl)
+  //   args.push('rtl=1');
   if (NTP_DESIGN.numTitleLines > 1)
     args.push('ntl=' + NTP_DESIGN.numTitleLines);
 
@@ -652,7 +653,7 @@ function init() {
   var iframe = document.createElement('iframe');
   iframe.id = IDS.TILES_IFRAME;
   iframe.tabIndex = 1;
-  iframe.src = 'chrome-search://most-visited/single.html?' + args.join('&');
+  iframe.src = 'single.html?' + args.join('&');
   $(IDS.TILES).appendChild(iframe);
 
   iframe.onload = function() {
