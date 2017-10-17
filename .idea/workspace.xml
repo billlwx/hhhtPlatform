@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5ceede38-904b-4e94-a262-26cf0c7b7444" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/myrisktest/producer_client.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -506,13 +505,6 @@
       <option name="presentableId" value="Default" />
       <updated>1505633200199</updated>
     </task>
-    <task id="LOCAL-00088" summary="白名单">
-      <created>1507626950200</created>
-      <option name="number" value="00088" />
-      <option name="presentableId" value="LOCAL-00088" />
-      <option name="project" value="LOCAL" />
-      <updated>1507626950200</updated>
-    </task>
     <task id="LOCAL-00089" summary="白名单">
       <created>1507627257660</created>
       <option name="number" value="00089" />
@@ -849,7 +841,14 @@
       <option name="project" value="LOCAL" />
       <updated>1508225303564</updated>
     </task>
-    <option name="localTasksCounter" value="137" />
+    <task id="LOCAL-00137" summary="推送MQ">
+      <created>1508225355173</created>
+      <option name="number" value="00137" />
+      <option name="presentableId" value="LOCAL-00137" />
+      <option name="project" value="LOCAL" />
+      <updated>1508225355173</updated>
+    </task>
+    <option name="localTasksCounter" value="138" />
     <servers />
   </component>
   <component name="TodoView">
@@ -912,7 +911,8 @@
     <MESSAGE value="test" />
     <MESSAGE value="Merge remote-tracking branch 'origin/master' into risktest&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml" />
     <MESSAGE value="更新" />
-    <option name="LAST_COMMIT_MESSAGE" value="更新" />
+    <MESSAGE value="推送MQ" />
+    <option name="LAST_COMMIT_MESSAGE" value="推送MQ" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
