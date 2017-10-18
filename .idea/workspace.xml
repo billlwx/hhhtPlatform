@@ -29,8 +29,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="160">
-              <caret line="431" column="0" lean-forward="false" selection-start-line="431" selection-start-column="2" selection-end-line="431" selection-end-column="145" />
+            <state relative-caret-position="141">
+              <caret line="499" column="21" lean-forward="false" selection-start-line="479" selection-start-column="16" selection-end-line="499" selection-end-column="21" />
               <folding />
             </state>
           </provider>
@@ -476,13 +476,6 @@
       <option name="presentableId" value="Default" />
       <updated>1505633200199</updated>
     </task>
-    <task id="LOCAL-00116" summary="test">
-      <created>1507775901266</created>
-      <option name="number" value="00116" />
-      <option name="presentableId" value="LOCAL-00116" />
-      <option name="project" value="LOCAL" />
-      <updated>1507775901266</updated>
-    </task>
     <task id="LOCAL-00117" summary="test">
       <created>1507776053259</created>
       <option name="number" value="00117" />
@@ -819,7 +812,14 @@
       <option name="project" value="LOCAL" />
       <updated>1508317623722</updated>
     </task>
-    <option name="localTasksCounter" value="165" />
+    <task id="LOCAL-00165" summary="样式">
+      <created>1508317961268</created>
+      <option name="number" value="00165" />
+      <option name="presentableId" value="LOCAL-00165" />
+      <option name="project" value="LOCAL" />
+      <updated>1508317961268</updated>
+    </task>
+    <option name="localTasksCounter" value="166" />
     <servers />
   </component>
   <component name="TodoView">
@@ -1241,8 +1241,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="431" column="0" lean-forward="false" selection-start-line="431" selection-start-column="2" selection-end-line="431" selection-end-column="145" />
+        <state relative-caret-position="141">
+          <caret line="499" column="21" lean-forward="false" selection-start-line="479" selection-start-column="16" selection-end-line="499" selection-end-column="21" />
           <folding />
         </state>
       </provider>
