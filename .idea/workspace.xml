@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5ceede38-904b-4e94-a262-26cf0c7b7444" name="Default" comment="推送MQ">
+    <list default="true" id="5ceede38-904b-4e94-a262-26cf0c7b7444" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/index.html" afterPath="$PROJECT_DIR$/templates/index.html" />
     </list>
@@ -78,8 +78,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="509">
-              <caret line="105" column="148" lean-forward="false" selection-start-line="105" selection-start-column="148" selection-end-line="105" selection-end-column="148" />
+            <state relative-caret-position="452">
+              <caret line="105" column="167" lean-forward="false" selection-start-line="105" selection-start-column="167" selection-end-line="105" selection-end-column="167" />
               <folding />
             </state>
           </provider>
@@ -536,13 +536,6 @@
       <option name="presentableId" value="Default" />
       <updated>1505633200199</updated>
     </task>
-    <task id="LOCAL-00095" summary="样式">
-      <created>1507630392451</created>
-      <option name="number" value="00095" />
-      <option name="presentableId" value="LOCAL-00095" />
-      <option name="project" value="LOCAL" />
-      <updated>1507630392451</updated>
-    </task>
     <task id="LOCAL-00096" summary="样式">
       <created>1507631690151</created>
       <option name="number" value="00096" />
@@ -879,7 +872,14 @@
       <option name="project" value="LOCAL" />
       <updated>1508307668730</updated>
     </task>
-    <option name="localTasksCounter" value="144" />
+    <task id="LOCAL-00144" summary="样式">
+      <created>1508308734273</created>
+      <option name="number" value="00144" />
+      <option name="presentableId" value="LOCAL-00144" />
+      <option name="project" value="LOCAL" />
+      <updated>1508308734273</updated>
+    </task>
+    <option name="localTasksCounter" value="145" />
     <servers />
   </component>
   <component name="TodoView">
@@ -1282,8 +1282,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="509">
-          <caret line="105" column="148" lean-forward="false" selection-start-line="105" selection-start-column="148" selection-end-line="105" selection-end-column="148" />
+        <state relative-caret-position="452">
+          <caret line="105" column="167" lean-forward="false" selection-start-line="105" selection-start-column="167" selection-end-line="105" selection-end-column="167" />
           <folding />
         </state>
       </provider>
