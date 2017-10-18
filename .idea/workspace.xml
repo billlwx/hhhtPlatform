@@ -29,8 +29,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="331">
-              <caret line="402" column="0" lean-forward="false" selection-start-line="402" selection-start-column="0" selection-end-line="408" selection-end-column="22" />
+            <state relative-caret-position="160">
+              <caret line="431" column="0" lean-forward="false" selection-start-line="431" selection-start-column="2" selection-end-line="431" selection-end-column="145" />
               <folding />
             </state>
           </provider>
@@ -60,8 +60,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>id=</find>
-      <find>modifyUserInfo</find>
       <find>INSTALLED_APPS</find>
       <find>MIDDLEWAREMIDDLEWARE_CLASSES</find>
       <find>updateuid</find>
@@ -75,7 +73,6 @@
       <find>TEMPLATE</find>
       <find>background</find>
       <find>backgroud</find>
-      <find>body</find>
       <find>tm-bg-6.jpeg</find>
       <find>fontawesome-webfont.woff</find>
       <find>cd-hero</find>
@@ -90,6 +87,9 @@
       <find>overflow</find>
       <find>grid-item</find>
       <find>tm-img-gallery gallery-two</find>
+      <find>mfp-container mfp-image-holder mfp-s-error</find>
+      <find>loaded mfp-zoom-out-cur</find>
+      <find>body</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -476,13 +476,6 @@
       <option name="presentableId" value="Default" />
       <updated>1505633200199</updated>
     </task>
-    <task id="LOCAL-00115" summary="test">
-      <created>1507774513956</created>
-      <option name="number" value="00115" />
-      <option name="presentableId" value="LOCAL-00115" />
-      <option name="project" value="LOCAL" />
-      <updated>1507774513956</updated>
-    </task>
     <task id="LOCAL-00116" summary="test">
       <created>1507775901266</created>
       <option name="number" value="00116" />
@@ -819,7 +812,14 @@
       <option name="project" value="LOCAL" />
       <updated>1508317490370</updated>
     </task>
-    <option name="localTasksCounter" value="164" />
+    <task id="LOCAL-00164" summary="样式">
+      <created>1508317623722</created>
+      <option name="number" value="00164" />
+      <option name="presentableId" value="LOCAL-00164" />
+      <option name="project" value="LOCAL" />
+      <updated>1508317623722</updated>
+    </task>
+    <option name="localTasksCounter" value="165" />
     <servers />
   </component>
   <component name="TodoView">
@@ -1241,8 +1241,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="331">
-          <caret line="402" column="0" lean-forward="false" selection-start-line="402" selection-start-column="0" selection-end-line="408" selection-end-column="22" />
+        <state relative-caret-position="160">
+          <caret line="431" column="0" lean-forward="false" selection-start-line="431" selection-start-column="2" selection-end-line="431" selection-end-column="145" />
           <folding />
         </state>
       </provider>
