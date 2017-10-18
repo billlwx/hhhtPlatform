@@ -172,7 +172,7 @@ button:focus { outline: none; }
 	width: 100%;
 }
 
-.tm-3-col-container { overflow: auto; }
+.tm-3-col-container { overflow: hidden; }
 
 .cd-hero-slider h2.tm-text-title {
 	color: #000002;
