@@ -19,7 +19,7 @@ from apo import views
 from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 from django.contrib import staticfiles
 from apo import selectUid,deleteUserInfo,mcflush,whitelist
-from myrisktest import hbase_client
+from myrisktest import hbase_client, producer_client
 import settings
 
 
@@ -38,6 +38,7 @@ urlpatterns = [
     url(r'^selectwhitelist/$', whitelist.selectwhitelist),
     url(r'^updatewhitelist/$', whitelist.updatewhitelist),
     url(r'^hbaseclean/$', hbase_client.hbaseclean),
+    url(r'^sendriskmq/$', producer_client.sendriskmq),
 ]
 
 urlpatterns += staticfiles_urlpatterns()
