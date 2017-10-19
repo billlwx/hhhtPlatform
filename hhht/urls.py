@@ -39,6 +39,7 @@ urlpatterns = [
     url(r'^updatewhitelist/$', whitelist.updatewhitelist),
     url(r'^hbaseclean/$', hbase_client.hbaseclean),
     url(r'^sendriskmq/$', producer_client.sendriskmq),
+    url(r'^sendlendrulesmq/$', producer_client.sendlendrulesmq),
 ]
 
 urlpatterns += staticfiles_urlpatterns()

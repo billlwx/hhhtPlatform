@@ -220,6 +220,27 @@
 
 </script>
 <hr/>
+
+<h2>推送后台MQ</h2>
+<form action="/sendlendrulesmq" method="get" id="js-form17" class="form-inline">
+    手机号：<input type="number" id="MQmobile"/>
+<input name="handleResult" type="radio" value="0" checked="checked"/>通过
+<input name="handleResult" type="radio" value="1" />人工
+<input name="handleResult" type="radio" value="2" />拒绝
+    <button type="submit" class="btn btn-primary" >推送</button>
+</form>
+<div id="msg17">
+    <script>
+    $("#js-form17").on('submit', function (e) {
+        e.preventDefault();
+        var mobile = document.getElementById('MQmobile').value;
+        var handleResult = $("input[name='handleResult']:checked").val();
+        $.get('/sendlendrulesmq', {mobile: mobile,handleResult: handleResult}).done(function(data) {
+            $("#msg17").html(data);
+        })
+    })
+</script>
+</div>
 <hr/>
 <h5>测试平台页面权限控制------待开发</h5>
 <hr/>
