@@ -1,13 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5ceede38-904b-4e94-a262-26cf0c7b7444" name="Default" comment="推送MQ">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/myrisktest/1.txt" afterPath="" />
+    <list default="true" id="5ceede38-904b-4e94-a262-26cf0c7b7444" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/hhht/urls.py" afterPath="$PROJECT_DIR$/hhht/urls.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myrisktest/my_producer.py" afterPath="$PROJECT_DIR$/myrisktest/my_producer.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/myrisktest/producer_client.py" afterPath="$PROJECT_DIR$/myrisktest/producer_client.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/tools.html" afterPath="$PROJECT_DIR$/templates/tools.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -505,13 +500,6 @@
       <option name="presentableId" value="Default" />
       <updated>1505633200199</updated>
     </task>
-    <task id="LOCAL-00089" summary="白名单">
-      <created>1507627257660</created>
-      <option name="number" value="00089" />
-      <option name="presentableId" value="LOCAL-00089" />
-      <option name="project" value="LOCAL" />
-      <updated>1507627257660</updated>
-    </task>
     <task id="LOCAL-00090" summary="样式">
       <created>1507627336994</created>
       <option name="number" value="00090" />
@@ -848,7 +836,14 @@
       <option name="project" value="LOCAL" />
       <updated>1508225355173</updated>
     </task>
-    <option name="localTasksCounter" value="138" />
+    <task id="LOCAL-00138" summary="避开风控进件">
+      <created>1508383041361</created>
+      <option name="number" value="00138" />
+      <option name="presentableId" value="LOCAL-00138" />
+      <option name="project" value="LOCAL" />
+      <updated>1508383041361</updated>
+    </task>
+    <option name="localTasksCounter" value="139" />
     <servers />
   </component>
   <component name="TodoView">
@@ -924,7 +919,8 @@
     <MESSAGE value="Merge remote-tracking branch 'origin/master' into risktest&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml" />
     <MESSAGE value="更新" />
     <MESSAGE value="推送MQ" />
-    <option name="LAST_COMMIT_MESSAGE" value="推送MQ" />
+    <MESSAGE value="避开风控进件" />
+    <option name="LAST_COMMIT_MESSAGE" value="避开风控进件" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
