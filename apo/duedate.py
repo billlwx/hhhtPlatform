@@ -5,10 +5,14 @@ import datetime
 import time
 import random
 from zidian import *
+import MySQLdb
 
 
 def duedate(request):
-    db = DB(**cgg_test_db)
+
+    # db = DB(**cgg_test_db)
+    # 使用cursor()方法获取操作游标
+
     sign = request.GET['usersign']
     tm = str(time.time())
     shuiji = str(random.randint(0,99))
@@ -28,8 +32,21 @@ def duedate(request):
     overdue_collection = "INSERT INTO `overdue_collection` (`collection_no`, `contract_no`, `case_no`, `collection_status`, `collector`, `assign_status`, `assign_time`, `loan_count`, `overdue_days`, `late_interest`, `overdue_interest`, `communicate_comment`, `communicate_result`, `created_by`, `last_modified_by`, `created_date`, `last_modified_date`, `collector_id`) VALUES ('123456', '%s', '10480', '0', NULL, '0', '1980-01-01 00:00:00', '21', '1', '0.00', '10.00', NULL, NULL, NULL, NULL, '%s', '%s', NULL)" % (contract_no,datenow,datenow)
     print overdue_collection
     if contractsql != '':
-        db.insert(contractsql)
-        db.insert(overdue_collection)
+        db = MySQLdb.connect('119.23.218.196', 33066, 'admin', 'admin#ROOT@ha', 'miloan')
+        cursor = db.cursor()
+        try:
+            # 执行sql语句
+            cursor.execute(contractsql)
+            # 提交到数据库执行
+            db.commit()
+        except:
+            # Rollback in case there is any error
+            db.rollback()
+
+        # 关闭数据库连接
+        db.close()
+        # db.insert(contractsql)
+        # db.insert(overdue_collection)
         return HttpResponse("success")
     return HttpResponse("false")
 
