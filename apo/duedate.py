@@ -7,7 +7,7 @@ import random
 from zidian import *
 import MySQLdb
 
-def coll_no(self):
+def coll_no():
     cggdb = DB(**cgg_test_db)
     selectcollection_no = 'select collection_no from overdue_collection ORDER BY collection_no desc  limit 1'
     colno = cggdb.query(selectcollection_no)
