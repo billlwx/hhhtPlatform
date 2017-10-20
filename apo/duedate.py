@@ -31,12 +31,13 @@ def duedate(request):
     print collection_no
     overdue_collection = "INSERT INTO `overdue_collection` (`collection_no`, `contract_no`, `case_no`, `collection_status`, `collector`, `assign_status`, `assign_time`, `loan_count`, `overdue_days`, `late_interest`, `overdue_interest`, `communicate_comment`, `communicate_result`, `created_by`, `last_modified_by`, `created_date`, `last_modified_date`, `collector_id`) VALUES ('%s', '%s', '10480', '0', NULL, '0', '1980-01-01 00:00:00', '21', '1', '0.00', '10.00', NULL, NULL, NULL, NULL, '%s', '%s', NULL)" % (collection_no,contract_no,datenow,datenow)
     print overdue_collection
-    db = MySQLdb.connect(host='119.23.218.196', port=33066, user='admin', passwd='admin#ROOT@ha', db='miloan')
     if contractsql != '':
+        db = MySQLdb.connect(host='119.23.218.196', port=33066, user='admin', passwd='admin#ROOT@ha', db='miloan')
         cursor = db.cursor()
         try:
             # 执行sql语句
             cursor.execute(contractsql)
+            # 提交到数据库执行
             db.commit()
         except:
             # Rollback in case there is any error
@@ -46,18 +47,6 @@ def duedate(request):
         db.close()
         # db.insert(contractsql)
         # db.insert(overdue_collection)
-        if overdue_collection != '':
-            cursor = db.cursor()
-            try:
-                # 执行sql语句
-                cursor.execute(overdue_collection)
-                db.commit()
-            except:
-                # Rollback in case there is any error
-                db.rollback()
-
-            # 关闭数据库连接
-            db.close()
         return HttpResponse("success")
     return HttpResponse("false")
 
