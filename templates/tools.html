@@ -107,6 +107,23 @@
 </script>
 <hr/>
 
+<h2>构造催收逾期数据</h2>
+<p>仅用于催收逾期数据构造</p>
+<form action="/duedate" method="get" id="js-form8" class="form-inline">
+{#    <input type="text" name="mobile" placeholder="请输入用户手机号">#}
+    <button type="submit" class="btn btn-primary">添加催收逾期数据</button>
+</form>
+<div id="msg8"></div>
+<script>
+    $("#js-form8").on('submit', function (e) {
+        e.preventDefault();
+        $.get('/duedate').done(function(data) {
+            $("#msg8").html(data);
+        })
+    })
+</script>
+<hr/>
+
 
 <h2>查询&添加白名单</h2>
 <form action="/selectwhitelist" method="get" id="js-form6" class="form-inline">
