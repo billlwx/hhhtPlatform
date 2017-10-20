@@ -51,6 +51,21 @@ def duedate(request):
 
         # 关闭数据库连接
         db.close()
+
+    if overdue_collection != '':
+        db = MySQLdb.connect(host='119.23.218.196', port=33066, user='admin', passwd='admin#ROOT@ha', db='miloan')
+        cursor = db.cursor()
+        try:
+            # 执行sql语句
+            cursor.execute(overdue_collection)
+            # 提交到数据库执行
+            db.commit()
+        except:
+            # Rollback in case there is any error
+            db.rollback()
+
+        # 关闭数据库连接
+        db.close()
     # cggdb.insert(contractsql)
     # cggdb.insert(overdue_collection)
     return HttpResponse("success")
