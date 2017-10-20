@@ -30,8 +30,8 @@ def duedate(request):
     overdue_collection = "INSERT INTO `overdue_collection` (`collection_no`, `contract_no`, `case_no`, `collection_status`, `collector`, `assign_status`, `assign_time`, `loan_count`, `overdue_days`, `late_interest`, `overdue_interest`, `communicate_comment`, `communicate_result`, `created_by`, `last_modified_by`, `created_date`, `last_modified_date`, `collector_id`) VALUES ('%s', '%s', '10480', '0', NULL, '0', '1980-01-01 00:00:00', '21', '1', '0.00', '10.00', NULL, NULL, NULL, NULL, '%s', '%s', NULL)" % (collection_no,contract_no,datenow,datenow)
     print overdue_collection
     if contractsql != '':
-        db.update(contractsql)
-        db.update(overdue_collection)
+        db.insert(contractsql)
+        db.insert(overdue_collection)
         return HttpResponse("success")
     return HttpResponse("false")
 

@@ -47,6 +47,7 @@ class DB():
             cursor.execute(sqlString)
             # 提交到数据库执行
             self.conn.commit()
+            cursor.close()
         except:
             # Rollback in case there is any error
             self.conn.rollback()
@@ -54,13 +55,12 @@ class DB():
             self.conn.close()
 
     def insert(self, sqlString):
-        try:
                 cursor = self.conn.cursor()
                 # 执行sql语句
                 cursor.execute(sqlString)
                 # 提交到数据库执行
+                cursor.close()
                 self.conn.commit()
-        except:
                 self.conn.close()
 
 
