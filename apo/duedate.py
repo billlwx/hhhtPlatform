@@ -1,10 +1,10 @@
 #-*- coding: UTF-8 -*-
 from MysqldbHelper import *
 from django.http import HttpResponse
-from zidian import *
 import datetime
 import time
 import random
+from zidian import *
 
 
 def duedate(request):
