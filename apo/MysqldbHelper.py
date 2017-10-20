@@ -52,7 +52,7 @@ class DB():
             # Rollback in case there is any error
             self.conn.rollback()
         # 关闭数据库连接
-            self.conn.close()
+        self.conn.close()
 
     def insert(self, sqlString):
         try:
@@ -60,9 +60,10 @@ class DB():
                 # 执行sql语句
                 cursor.execute(sqlString)
                 # 提交到数据库执行
-                cursor.close()
-        except:
                 self.conn.commit()
-                self.conn.close()
+        except:
+            self.conn.rollback()
+        # 关闭数据库连接
+        self.conn.close()
 
 
