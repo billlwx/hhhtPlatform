@@ -61,8 +61,9 @@ class DB():
                 cursor.execute(sqlString)
                 # 提交到数据库执行
                 self.conn.commit()
+                cursor.close()
         except:
-            self.conn.rollback()
+                self.conn.rollback()
         # 关闭数据库连接
         self.conn.close()
 
