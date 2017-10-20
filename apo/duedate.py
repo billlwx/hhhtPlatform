@@ -68,7 +68,10 @@ def duedate(request):
     #     db.close()
     testdb = DB(**cgg_test_db)
     testdb.update(contractsql)
-    testdb.update(overdue_collection)
-    return HttpResponse("success")
+    if overdue_collection!='':
+        overduedb = DB(**cgg_test_db)
+        overduedb.update(overdue_collection)
+        return HttpResponse("success")
+    return HttpResponse("false")
 
 
