@@ -60,8 +60,6 @@ class DB():
                 cursor.execute(sqlString)
                 # 提交到数据库执行
                 self.conn.commit()
-                cursor.close()
-                self.conn.close()
         except:
                 self.conn.close()
 
