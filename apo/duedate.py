@@ -18,8 +18,6 @@ def coll_no():
 
 
 def duedate(request):
-
-
     sign = request.GET['usersign']
     tm = str(time.time())
     shuiji = str(random.randint(0,99))
@@ -37,35 +35,6 @@ def duedate(request):
     collection_no, contract_no, datenow, datenow)
     print overdue_collection
 
-    # if contractsql != '':
-    #     db = MySQLdb.connect(host='119.23.218.196', port=33066, user='admin', passwd='admin#ROOT@ha', db='miloan')
-    #     cursor = db.cursor()
-    #     try:
-    #         # 执行sql语句
-    #         cursor.execute(contractsql)
-    #         # 提交到数据库执行
-    #         db.commit()
-    #     except:
-    #         # Rollback in case there is any error
-    #         db.rollback()
-    #
-    #     # 关闭数据库连接
-    #     db.close()
-    #
-    # if overdue_collection != '':
-    #     db = MySQLdb.connect(host='119.23.218.196', port=33066, user='admin', passwd='admin#ROOT@ha', db='miloan')
-    #     cursor = db.cursor()
-    #     try:
-    #         # 执行sql语句
-    #         cursor.execute(contractsql)
-    #         # 提交到数据库执行
-    #         db.commit()
-    #     except:
-    #         # Rollback in case there is any error
-    #         db.rollback()
-    #
-    #     # 关闭数据库连接
-    #     db.close()
     testdb = DB(**cgg_test_db)
     testdb.update(contractsql)
     if overdue_collection!='':
