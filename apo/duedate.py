@@ -9,7 +9,7 @@ import random
 
 def duedate(request):
     db = DB(**cgg_test_db)
-    sign = 'testqa'
+    sign = request.GET['usersign']
     tm = str(time.time())
     select = 'select * from '
     shuiji = str(random.randint(0,99))

@@ -111,13 +111,17 @@
 <p>仅用于催收逾期数据构造</p>
 <form action="/duedate" method="get" id="js-form8" class="form-inline">
 {#    <input type="text" name="mobile" placeholder="请输入用户手机号">#}
+        <label>请输入用户标识比如zhouyahui</label>
+    <div class="form-group">
+        <input type="text" name="usersign" class="form-control" placeholder="请输入用户标识" id="usersign">
+    </div>
     <button type="submit" class="btn btn-primary">添加催收逾期数据</button>
 </form>
 <div id="msg8"></div>
 <script>
     $("#js-form8").on('submit', function (e) {
         e.preventDefault();
-        $.get('/duedate').done(function(data) {
+        $.get('/duedate',{usersign: $("#usersign").val()}).done(function(data) {
             $("#msg8").html(data);
         })
     })
