@@ -68,7 +68,7 @@ def duedate(request):
     #     db.close()
     testdb = DB(**cgg_test_db)
     testdb.update(contractsql)
-    # cggdb.insert(overdue_collection)
+    testdb.update(overdue_collection)
     return HttpResponse("success")
 
 
