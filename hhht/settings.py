@@ -140,7 +140,7 @@ STATICFILES_DIRS = (
     ('images',os.path.join(STATIC_ROOT,'images').replace('\\','/') ),
     ('upload',os.path.join(STATIC_ROOT,'upload').replace('\\','/') ),
     ('fonts', os.path.join(STATIC_ROOT, 'fonts').replace('\\', '/')),
-    ('report', os.path.join(STATIC_ROOT, 'fonts').replace('\\', '/')),
+    ('report', os.path.join(STATIC_ROOT, 'report').replace('\\', '/')),
 )
 STATICFILES_FINDERS = (
   'django.contrib.staticfiles.finders.FileSystemFinder',
