@@ -34,13 +34,14 @@
 <script>
 
     $.getJSON('/autoreportlist/').done(function (data) {
+        var jsonarray = $.parseJSON(data)
+        var listStr = []
 
-
-        $.each(data, function (content) {
-             data.push('<p><a href="'+content.url+'">'+content.filename+'</a></p>')
+        $.each(jsonarray, function (content) {
+             listStr.push('<p><a href="'+content.url+'">'+content.filename+'</a></p>')
         })
 
-        $("#app").html(data.join(''))
+        $("#app").html(listStr.join(''))
     })
 </script>
 
