@@ -20,7 +20,7 @@ def autoreportlist(request):
         # reportlist.append("filename=%s,url=%s%s;" % \
         #                  (file,reporturl,file))
     if len(reportlist):
-        HttpResponse(json.dumps(reportlist, ensure_ascii=False))
+        return  HttpResponse(json.dumps(reportlist, ensure_ascii=False))
 
     else:
         return HttpResponse('result is null')
