@@ -12,5 +12,7 @@ def autoreportlist(request):
     for file in os.listdir(path):
         reportlist.append("filename=%s,url=%s%s;" % \
                         (file,reporturl,file))
-        print file
+    if len(reportlist):
         return HttpResponse(reportlist)
+    else:
+        return HttpResponse('result is null')
