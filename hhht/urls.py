@@ -18,7 +18,7 @@ from django.contrib import admin
 from apo import views
 from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 from django.contrib import staticfiles
-from apo import selectUid,deleteUserInfo,mcflush,whitelist,duedate
+from apo import selectUid,deleteUserInfo,mcflush,whitelist,duedate,upload_report
 from myrisktest import hbase_client, producer_client
 import settings
 
@@ -42,6 +42,7 @@ urlpatterns = [
     url(r'^sendriskmq/$', producer_client.sendriskmq),
     url(r'^sendlendrulesmq/$', producer_client.sendlendrulesmq),
     url(r'^duedate/$', duedate.duedate),
+    url(r'^uploadautoreport/$', upload_report.upload_file),
 ]
 
 urlpatterns += staticfiles_urlpatterns()
