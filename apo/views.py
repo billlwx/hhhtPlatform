@@ -20,5 +20,10 @@ def single(request):
     return render_to_response('single.html')
 
 
+def autoreport(request):
+
+    return render_to_response('reportlist.html')
+
+
 
 

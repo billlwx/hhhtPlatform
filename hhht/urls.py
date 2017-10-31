@@ -29,6 +29,7 @@ import settings
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^index/$',views.index),
+    url(r'^autoreport/$',views.autoreport),
     url(r'^index/single.html$', views.single),
     url(r'^tools/$', views.tools),
     url(r'^selectUid/$', selectUid.selectUid),

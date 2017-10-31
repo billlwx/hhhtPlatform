@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>reportlist</title>
+    <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<body>
+
+<div id="app"></div>
+
+<script>
+
+    $.get('/autoreportlist/').done(function (data) {
+        var arr = data.split(';');
+        var list = [];
+        var listStr = []
+        arr.forEach(function (item) {
+            var ii = item.split(',')
+            var listItem = {}
+            ii.forEach(function (item1) {
+                var a = item1.split('=');
+                listItem[a[0]] = a[1]
+            })
+            list.push(listItem)
+
+            listStr.push('<p><a href="'+listItem.url+'">'+listItem.filename+'</a></p>')
+        })
+
+        $("#app").html(listStr.join(''))
+    })
+</script>
+
+
+</body>
+</html>

@@ -10,14 +10,14 @@ def autoreportlist(request):
     reporturl = 'http://119.23.218.196:7081/autoreport/'
     reportlist = []
     for file in os.listdir(path):
-        obj= {
-            'file': file,
-            'url': reporturl + file
-        }
+        # obj= {
+        #     'file': file,
+        #     'url': reporturl + file
+        # }
 
-        reportlist.append(obj);
-        # reportlist.append("filename=%s,url=%s%s;" % \
-        #                 (file,reporturl,file))
+        # reportlist.append(obj);
+        reportlist.append("filename=%s,url=%s%s;" % \
+                         (file,reporturl,file))
     if len(reportlist):
         return HttpResponse(reportlist)
     else:
