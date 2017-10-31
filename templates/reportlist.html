@@ -34,13 +34,12 @@
 <script>
 
     $.getJSON('/autoreportlist/').done(function (data) {
-        var str = [{"url": "http://119.23.218.196:7081/autoreport/2017-10-22-11_22_38.html", "filename": "2017-10-22-11_22_38.html"}, {"url": "http://119.23.218.196:7081/autoreport/2017-10-22-11_22_33.html", "filename": "2017-10-22-11_22_33.html"}]
-        var jsonarray = $.parseJSON(str)
+        var jsonData = data;
         var listStr = []
-
-        $.each(jsonarray, function (content) {
-             listStr.push('<p><a href="'+content.url+'">'+content.filename+'</a></p>')
-        })
+        for(var i=0;i<jsonData.length;i++)
+        {   var aobj = jsonData[i];
+             listStr.push('<p><a href="'+aobj.url+'">'+aobj.filename+'</a></p>')
+        }
 
         $("#app").html(listStr.join(''))
     })
