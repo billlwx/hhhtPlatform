@@ -3,7 +3,7 @@
 
 from django.http import HttpResponse
 import os,sys
-from django.utils import simplejson
+import json
 
 def autoreportlist(request):
     path = '/apps/data/act/autoreport'
@@ -20,7 +20,7 @@ def autoreportlist(request):
         # reportlist.append("filename=%s,url=%s%s;" % \
         #                  (file,reporturl,file))
     if len(reportlist):
-        HttpResponse(simplejson.dumps(reportlist, ensure_ascii=False))
+        HttpResponse(json.dumps(reportlist, ensure_ascii=False))
 
     else:
         return HttpResponse('result is null')
