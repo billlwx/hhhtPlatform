@@ -33,11 +33,12 @@
 
 <script>
 
-    $.get('/autoreportlist/').done(function (data) {
-        $.each(data, function (content) {
-             arr.push('<p><a href="'+content.url+'">'+content.filename+'</a></p>')
-        })
+    $.getJSON('/autoreportlist/').done(function (data) {
 
+
+        $.each(data, function (content) {
+             data.push('<p><a href="'+content.url+'">'+content.filename+'</a></p>')
+        })
 
         $("#app").html(data.join(''))
     })
