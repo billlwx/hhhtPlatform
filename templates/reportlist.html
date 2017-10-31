@@ -34,13 +34,12 @@
 <script>
 
     $.get('/autoreportlist/').done(function (data) {
-        var arr = data
-        $.each(arr, function (content) {
+        $.each(data, function (content) {
              arr.push('<p><a href="'+content.url+'">'+content.filename+'</a></p>')
         })
 
 
-        $("#app").html(arr.join(''))
+        $("#app").html(data.join(''))
     })
 </script>
 
