@@ -23,9 +23,9 @@ def deleteUserInfo(request):
 
 def modifyUserInfo(request):
     UID = request.GET['modifyUserUid']
-    db = DB(**cgg_test_db)
     updatecase = "UPDATE miloan.case set case_status = 'rejected' where user_id = '%s' ORDER BY id desc  limit 1" % (UID)
     updatecontr = "UPDATE miloan.contract set status = 'REPAY_SUC'  where uid = '%s' ORDER BY id desc  limit 1" % (UID)
+    db = DB(**cgg_test_db)
     db.update(updatecase)
     db.update(updatecontr)
     return HttpResponse({'succes'})
