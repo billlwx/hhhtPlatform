@@ -5,7 +5,7 @@ from zidian import *
 
 def deleteUserInfo(request):
     mobile = request.GET['uid']
-    db = DB(**cgg_test_db)
+
     list = ['user_contact', 'user_contact_archive', 'user_employment', 'user_employment_archive',
             'user_employment_status', 'user_identity', 'user_identity_archive', 'user_identity_face',
             'user_identity_face_archive', 'user_identity_face_status', 'user_key_contact', 'user_operator',
@@ -17,7 +17,8 @@ def deleteUserInfo(request):
     for i in list:
         table_name = i
         sql = "DELETE from %s where user_id = '%s'" % (table_name,mobile)
-        db.update(sql)
+        deletedb = DB(**cgg_test_db)
+        deletedb.update(sql)
     return HttpResponse({'succes'})
 
 
