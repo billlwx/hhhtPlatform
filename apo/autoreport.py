@@ -6,7 +6,10 @@ import os,sys
 import json
 
 def autoreportlist(request):
+    #服务器上的地址
     path = '/apps/data/act/autoreport'
+    #本地地址
+    #path = '/Users/zhouyahui/code/hhht/static/report'
     #  path = '/Users/zhouyahui/code/hhht/static/report'
     reporturl = 'http://119.23.218.196:7081/autoreport/'
     reportlist = []
