@@ -17,6 +17,7 @@ class DB():
         self.DB_HOST = DB_HOST
         self.DB_PORT = DB_PORT
         self.DB_USER = DB_USER
+
         self.DB_PWD = DB_PWD
         self.DB_NAME = DB_NAME
 
